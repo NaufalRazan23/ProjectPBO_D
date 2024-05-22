@@ -88,7 +88,7 @@
             // 
             KONSULTASI.AutoSize = true;
             KONSULTASI.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            KONSULTASI.Location = new Point(478, 112);
+            KONSULTASI.Location = new Point(468, 103);
             KONSULTASI.Name = "KONSULTASI";
             KONSULTASI.Size = new Size(110, 23);
             KONSULTASI.TabIndex = 4;
