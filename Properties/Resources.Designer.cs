@@ -63,6 +63,16 @@ namespace ProjectPBO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backbutton {
+            get {
+                object obj = ResourceManager.GetObject("backbutton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap disease_health_internal_body_human_medical_organ_icon_133513 {
             get {
                 object obj = ResourceManager.GetObject("disease_health_internal_body_human_medical_organ_icon_133513", resourceCulture);

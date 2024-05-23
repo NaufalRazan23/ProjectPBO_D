@@ -34,9 +34,12 @@
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             guna2DataGridView2 = new Guna.UI2.WinForms.Guna2DataGridView();
+            btnBack = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView2).BeginInit();
             SuspendLayout();
@@ -45,7 +48,7 @@
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Arial", 24F, FontStyle.Bold);
-            guna2HtmlLabel1.Location = new Point(115, 12);
+            guna2HtmlLabel1.Location = new Point(208, 12);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(673, 48);
             guna2HtmlLabel1.TabIndex = 1;
@@ -153,11 +156,30 @@
             guna2DataGridView2.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             guna2DataGridView2.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
             // 
+            // btnBack
+            // 
+            btnBack.CustomizableEdges = customizableEdges1;
+            btnBack.DisabledState.BorderColor = Color.DarkGray;
+            btnBack.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnBack.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnBack.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnBack.FillColor = Color.Empty;
+            btnBack.Font = new Font("Segoe UI", 9F);
+            btnBack.ForeColor = Color.White;
+            btnBack.Image = Properties.Resources.backbutton;
+            btnBack.Location = new Point(12, 12);
+            btnBack.Name = "btnBack";
+            btnBack.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnBack.Size = new Size(54, 41);
+            btnBack.TabIndex = 7;
+            btnBack.Click += btnBack_Click;
+            // 
             // EditJadwalDoktor
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1071, 631);
+            Controls.Add(btnBack);
             Controls.Add(guna2DataGridView2);
             Controls.Add(guna2DataGridView1);
             Controls.Add(guna2HtmlLabel1);
@@ -174,5 +196,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView2;
+        private Guna.UI2.WinForms.Guna2Button btnBack;
     }
 }

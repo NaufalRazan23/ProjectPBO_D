@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             symptomPercentage1 = new Components.SymptomPercentage();
             symptomPercentage2 = new Components.SymptomPercentage();
             label1 = new Label();
@@ -40,6 +42,7 @@
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
+            btnBack = new Guna.UI2.WinForms.Guna2Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -48,7 +51,7 @@
             // 
             symptomPercentage1.BackColor = SystemColors.ActiveCaptionText;
             symptomPercentage1.Image = Properties.Resources.disease_health_internal_body_human_medical_organ_icon_133513;
-            symptomPercentage1.Location = new Point(12, 12);
+            symptomPercentage1.Location = new Point(58, 55);
             symptomPercentage1.MinimumSize = new Size(0, 100);
             symptomPercentage1.Name = "symptomPercentage1";
             symptomPercentage1.Percentage = "33%";
@@ -61,7 +64,7 @@
             symptomPercentage2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             symptomPercentage2.BackColor = SystemColors.ActiveCaptionText;
             symptomPercentage2.Image = Properties.Resources.sore_throat_coronavirus_covid_covid_virus_fever_icon_134852_1;
-            symptomPercentage2.Location = new Point(614, 12);
+            symptomPercentage2.Location = new Point(604, 55);
             symptomPercentage2.MinimumSize = new Size(0, 100);
             symptomPercentage2.Name = "symptomPercentage2";
             symptomPercentage2.Percentage = "67%";
@@ -74,7 +77,7 @@
             label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Font = new Font("Arial Narrow", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(219, 136);
+            label1.Location = new Point(219, 180);
             label1.Name = "label1";
             label1.Size = new Size(594, 40);
             label1.TabIndex = 2;
@@ -112,9 +115,9 @@
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(label3);
-            panel2.Location = new Point(219, 211);
+            panel2.Location = new Point(219, 256);
             panel2.Name = "panel2";
-            panel2.Size = new Size(594, 331);
+            panel2.Size = new Size(594, 286);
             panel2.TabIndex = 4;
             // 
             // label7
@@ -189,11 +192,30 @@
             label3.TabIndex = 0;
             label3.Text = "DEWASA";
             // 
+            // btnBack
+            // 
+            btnBack.CustomizableEdges = customizableEdges1;
+            btnBack.DisabledState.BorderColor = Color.DarkGray;
+            btnBack.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnBack.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnBack.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnBack.FillColor = Color.Empty;
+            btnBack.Font = new Font("Segoe UI", 9F);
+            btnBack.ForeColor = Color.White;
+            btnBack.Image = Properties.Resources.backbutton;
+            btnBack.Location = new Point(12, 12);
+            btnBack.Name = "btnBack";
+            btnBack.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnBack.Size = new Size(54, 41);
+            btnBack.TabIndex = 5;
+            btnBack.Click += btnBack_Click;
+            // 
             // RekomendasiObatForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1026, 618);
+            Controls.Add(btnBack);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(label1);
@@ -223,5 +245,6 @@
         private Label label5;
         private Label label4;
         private Label label3;
+        private Guna.UI2.WinForms.Guna2Button btnBack;
     }
 }
