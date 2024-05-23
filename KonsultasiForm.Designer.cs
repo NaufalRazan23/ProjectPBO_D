@@ -34,12 +34,18 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            cbKeluhan1 = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             btnBack = new Guna.UI2.WinForms.Guna2Button();
             panel1 = new Panel();
+            cbKeluhan2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            cbKeluhan3 = new Guna.UI2.WinForms.Guna2ComboBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -64,25 +70,25 @@
             guna2HtmlLabel2.Text = "SILAHKAN MASUKKAN KELUHAN YANG ANDA ALAMI, KAMI AKAN MENDIAGNOSA PENYAKIT DAN OBAT YANG BISA MEMBANTU MENGURANGI GEJALA TERSEBUT";
             guna2HtmlLabel2.TextAlignment = ContentAlignment.MiddleCenter;
             // 
-            // guna2ComboBox1
+            // cbKeluhan1
             // 
-            guna2ComboBox1.BackColor = Color.Transparent;
-            guna2ComboBox1.CustomizableEdges = customizableEdges1;
-            guna2ComboBox1.DisplayMember = "KELUHAN 1";
-            guna2ComboBox1.DrawMode = DrawMode.OwnerDrawFixed;
-            guna2ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            guna2ComboBox1.FocusedColor = Color.FromArgb(94, 148, 255);
-            guna2ComboBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2ComboBox1.Font = new Font("Segoe UI", 10F);
-            guna2ComboBox1.ForeColor = Color.FromArgb(68, 88, 112);
-            guna2ComboBox1.ItemHeight = 30;
-            guna2ComboBox1.Items.AddRange(new object[] { "KELUHAN 1", "PUSING", "MERIANG", "PANAS", "BIBIR PECAH PECAH", "TENGOROKAN SAKIT" });
-            guna2ComboBox1.Location = new Point(232, 189);
-            guna2ComboBox1.Name = "guna2ComboBox1";
-            guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2ComboBox1.Size = new Size(342, 36);
-            guna2ComboBox1.StartIndex = 0;
-            guna2ComboBox1.TabIndex = 2;
+            cbKeluhan1.BackColor = Color.Transparent;
+            cbKeluhan1.CustomizableEdges = customizableEdges1;
+            cbKeluhan1.DisplayMember = "KELUHAN 1";
+            cbKeluhan1.DrawMode = DrawMode.OwnerDrawFixed;
+            cbKeluhan1.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbKeluhan1.FocusedColor = Color.FromArgb(94, 148, 255);
+            cbKeluhan1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cbKeluhan1.Font = new Font("Segoe UI", 10F);
+            cbKeluhan1.ForeColor = Color.FromArgb(68, 88, 112);
+            cbKeluhan1.ItemHeight = 30;
+            cbKeluhan1.Items.AddRange(new object[] { "KELUHAN 1", "PUSING", "MERIANG", "PANAS", "BIBIR PECAH PECAH", "TENGOROKAN SAKIT" });
+            cbKeluhan1.Location = new Point(232, 189);
+            cbKeluhan1.Name = "cbKeluhan1";
+            cbKeluhan1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            cbKeluhan1.Size = new Size(342, 36);
+            cbKeluhan1.StartIndex = 0;
+            cbKeluhan1.TabIndex = 2;
             // 
             // guna2Button1
             // 
@@ -129,13 +135,55 @@
             panel1.Size = new Size(800, 55);
             panel1.TabIndex = 7;
             // 
+            // cbKeluhan2
+            // 
+            cbKeluhan2.BackColor = Color.Transparent;
+            cbKeluhan2.CustomizableEdges = customizableEdges7;
+            cbKeluhan2.DisplayMember = "KELUHAN 2";
+            cbKeluhan2.DrawMode = DrawMode.OwnerDrawFixed;
+            cbKeluhan2.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbKeluhan2.FocusedColor = Color.FromArgb(94, 148, 255);
+            cbKeluhan2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cbKeluhan2.Font = new Font("Segoe UI", 10F);
+            cbKeluhan2.ForeColor = Color.FromArgb(68, 88, 112);
+            cbKeluhan2.ItemHeight = 30;
+            cbKeluhan2.Items.AddRange(new object[] { "KELUHAN 2", "PUSING", "MERIANG", "PANAS", "BIBIR PECAH PECAH", "TENGOROKAN SAKIT" });
+            cbKeluhan2.Location = new Point(232, 250);
+            cbKeluhan2.Name = "cbKeluhan2";
+            cbKeluhan2.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            cbKeluhan2.Size = new Size(342, 36);
+            cbKeluhan2.StartIndex = 0;
+            cbKeluhan2.TabIndex = 8;
+            // 
+            // cbKeluhan3
+            // 
+            cbKeluhan3.BackColor = Color.Transparent;
+            cbKeluhan3.CustomizableEdges = customizableEdges9;
+            cbKeluhan3.DisplayMember = "KELUHAN 1";
+            cbKeluhan3.DrawMode = DrawMode.OwnerDrawFixed;
+            cbKeluhan3.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbKeluhan3.FocusedColor = Color.FromArgb(94, 148, 255);
+            cbKeluhan3.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cbKeluhan3.Font = new Font("Segoe UI", 10F);
+            cbKeluhan3.ForeColor = Color.FromArgb(68, 88, 112);
+            cbKeluhan3.ItemHeight = 30;
+            cbKeluhan3.Items.AddRange(new object[] { "KELUHAN 3", "PUSING", "MERIANG", "PANAS", "BIBIR PECAH PECAH", "TENGOROKAN SAKIT" });
+            cbKeluhan3.Location = new Point(232, 305);
+            cbKeluhan3.Name = "cbKeluhan3";
+            cbKeluhan3.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            cbKeluhan3.Size = new Size(342, 36);
+            cbKeluhan3.StartIndex = 0;
+            cbKeluhan3.TabIndex = 9;
+            // 
             // KonsultasiForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(cbKeluhan3);
+            Controls.Add(cbKeluhan2);
             Controls.Add(guna2Button1);
-            Controls.Add(guna2ComboBox1);
+            Controls.Add(cbKeluhan1);
             Controls.Add(guna2HtmlLabel2);
             Controls.Add(guna2HtmlLabel1);
             Controls.Add(panel1);
@@ -150,9 +198,11 @@
 
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox cbKeluhan1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button btnBack;
         private Panel panel1;
+        private Guna.UI2.WinForms.Guna2ComboBox cbKeluhan2;
+        private Guna.UI2.WinForms.Guna2ComboBox cbKeluhan3;
     }
 }
