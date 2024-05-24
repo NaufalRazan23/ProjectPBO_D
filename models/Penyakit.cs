@@ -10,15 +10,11 @@ namespace ProjectPBO.models
     {
         public int idPenyakit;
         public string nama;
-        public List<Gejala> listGejala;
-        public List<Obat> listObat;
 
-        public Penyakit(int idPenyakit, string nama, List<Gejala> listGejala, List<Obat> listObat)
+        public Penyakit(int idPenyakit, string nama)
         {
             this.idPenyakit = idPenyakit;
             this.nama = nama;
-            this.listGejala = listGejala;
-            this.listObat = listObat;
         }
     }
 }
