@@ -20,6 +20,7 @@ namespace ProjectPBO.models
         {
             daftarGejala.Add(gejala);
         }
+        /*
         public List<Penyakit> getHasilPrediksi()
         {
             var hasilPrediksi = new List<Penyakit>();
@@ -28,5 +29,6 @@ namespace ProjectPBO.models
                 if (gejala.nama.)
             }
         }
+        */
     }
 }
