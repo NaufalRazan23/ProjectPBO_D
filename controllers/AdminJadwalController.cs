@@ -18,7 +18,8 @@ namespace ProjectPBO.controllers
             this.listJadwal = this.getListJadwal();
         }
 
-        public List<Jadwal> getListJadwal() {
+        public List<Jadwal> getListJadwal()
+        {
             List<Jadwal> listJadwal = new List<Jadwal>();
             NpgsqlConnection koneksi = KoneksiDatabase.BuatKoneksi();
             koneksi.Open();
@@ -46,6 +47,27 @@ namespace ProjectPBO.controllers
             }
             koneksi.Close();
             return listJadwal;
+        }
+
+        public Boolean update(List<Jadwal> listJadwal)
+        {
+            NpgsqlConnection koneksi = KoneksiDatabase.BuatKoneksi();
+            koneksi.Open();
+            NpgsqlTransaction transaksi = koneksi.BeginTransaction();
+            foreach (Jadwal jadwal in listJadwal)
+            {
+                NpgsqlCommand cmd = koneksi.CreateCommand();
+                cmd.CommandText = "UPDATE jadwal_dokter SET hari = @hari, jam_mulai = @mulai, jam_selesai = @selesai WHERE id_jadwal = @id";
+                cmd.Parameters.AddWithValue("hari", jadwal.hari);
+                cmd.Parameters.AddWithValue("mulai", jadwal.jamMulai);
+                cmd.Parameters.AddWithValue("selesai", jadwal.jamSelesai);
+                cmd.Parameters.AddWithValue("id", jadwal.idJadwal);
+                cmd.Transaction = transaksi;
+                cmd.ExecuteNonQuery();
+            }
+            transaksi.Commit();
+            koneksi.Close();
+            return true;
         }
     }
 }
