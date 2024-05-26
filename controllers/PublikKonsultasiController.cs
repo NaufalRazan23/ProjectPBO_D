@@ -11,11 +11,11 @@ namespace ProjectPBO
 {
     public class PublikKonsultasiController
     {
-        private Form2 view;
+        // Sementara
+        // private Form2 view;
         public SistemKonsultasi sistemKonsultasi;
 
-        public PublikKonsultasiController(Form2 view, SistemKonsultasi sistemKonsultasi) {
-            this.view = view;
+        public PublikKonsultasiController(SistemKonsultasi sistemKonsultasi) {
             this.sistemKonsultasi = sistemKonsultasi;
             this.sistemKonsultasi.daftarPenyakit = this.GetListPenyakit();
         }

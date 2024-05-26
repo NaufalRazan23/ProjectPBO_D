@@ -10,7 +10,8 @@ namespace ProjectPBO.controllers
 {
     public class AdminJadwalController
     {
-        private EditJadwalDoktor? view;
+        // Sementara
+        // private EditJadwalDoktor? view;
         public List<Jadwal> listJadwal;
 
         public AdminJadwalController()
