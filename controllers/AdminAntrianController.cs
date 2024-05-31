@@ -73,7 +73,7 @@ namespace ProjectPBO.controllers
             return antrianSekarang;
         }
 
-        public void tandaSelesai(Antrian antrian)
+        public void tandaiSelesai(Antrian antrian)
         {
             NpgsqlConnection koneksi = KoneksiDatabase.BuatKoneksi();
             koneksi.Open();
