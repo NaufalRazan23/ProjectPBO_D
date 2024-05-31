@@ -8,67 +8,117 @@ using System.Threading.Tasks;
 
 namespace ProjectPBO.controllers
 {
-    public class AdminJadwalController
+    public class AdminAntrianController
     {
-        // Sementara
-        // private EditJadwalDoktor? view;
-        public List<Jadwal> listJadwal;
+        public List<Antrian> listAntrian = new List<Antrian>();
+        public List<List<string>> label = [];
 
-        public AdminJadwalController()
+        public AdminAntrianController()
         {
-            this.listJadwal = this.getListJadwal();
+            this.listAntrian = this.getAntrian();
+            this.label = this.getLabel();
         }
 
-        public List<Jadwal> getListJadwal()
+        public List<Antrian> getAntrian()
         {
-            List<Jadwal> listJadwal = new List<Jadwal>();
+            List<Antrian> listAntrian = new List<Antrian>();
             NpgsqlConnection koneksi = KoneksiDatabase.BuatKoneksi();
             koneksi.Open();
             NpgsqlCommand query = koneksi.CreateCommand();
-            query.CommandText = @"select jd.id_jadwal, jd.hari, jd.jam_mulai, jd.jam_selesai,
-            d.id_dokter, d.nama_dokter, d.email_dokter, jed.nama_jenis_dokter
-            from jadwal_dokter jd
-            join dokter d on (jd.id_jadwal = d.id_jadwal)
-            join jenis_dokter jed on (jed.id_jenis_dokter = d.id_jenis_dokter)";
+            query.CommandText = @"select a.id_antrian, a.nomor_antrian, a.atas_nama, s.keterangan_status, j.label,
+            d.id_dokter, d.nama_dokter, d.email_dokter, j.nama_jenis_dokter
+            from antrian_pengunjung a
+            join status_pengunjung s on (a.id_status = s.id_status)
+            join dokter d on (d.id_dokter = a.id_dokter)
+            join jenis_dokter j on (j.id_jenis_dokter = d.id_jenis_dokter)
+            where a.tanggal = date (now())
+            order by j.label, a.nomor_antrian";
             NpgsqlDataReader reader = query.ExecuteReader();
             while (reader.Read())
             {
-                int idJadwal = reader.GetInt32(0);
-                string hari = reader.GetString(1);
-                TimeOnly mulai = TimeOnly.FromTimeSpan(reader.GetTimeSpan(2));
-                TimeOnly selesai = TimeOnly.FromTimeSpan(reader.GetTimeSpan(3));
-                int idDokter = reader.GetInt32(4);
-                string nama = reader.GetString(5);
-                string email = reader.GetString(6);
-                string jenis = reader.GetString(7);
+                int idAntrian = reader.GetInt32(0);
+                int nomorAntrian = reader.GetInt32(1);
+                string atasNama = reader.GetString(2);
+                string statusAntrian = reader.GetString(3);
+                string labelAntrian = reader.GetString(4);
+
+                int idDokter = reader.GetInt32(5);
+                string nama = reader.GetString(6);
+                string email = reader.GetString(7);
+                string jenis = reader.GetString(8);
 
                 Dokter dokter = new Dokter(idDokter, nama, email, jenis);
-                Jadwal jadwal = new Jadwal(idJadwal, hari, selesai, mulai, dokter);
-                listJadwal.Add(jadwal);
+                Antrian antrian = new Antrian(idAntrian, nomorAntrian, atasNama, statusAntrian, labelAntrian, dokter);
+                listAntrian.Add(antrian);
             }
             koneksi.Close();
-            return listJadwal;
+            return listAntrian;
         }
 
-        public Boolean update(List<Jadwal> listJadwal)
+        public Antrian? getAntrianSekarang(string label)
+        {
+            Antrian? antrianSekarang = null;
+            foreach (Antrian antrian in listAntrian)
+            {
+                if (antrian.labelAntrian != label || antrian.statusAntrian == "sudah selesai")
+                {
+                    continue;
+                }
+                else
+                {
+                    antrianSekarang = antrian;
+                    break;
+                }
+            }
+            return antrianSekarang;
+        }
+
+        public void tandaSelesai(Antrian antrian)
         {
             NpgsqlConnection koneksi = KoneksiDatabase.BuatKoneksi();
             koneksi.Open();
-            NpgsqlTransaction transaksi = koneksi.BeginTransaction();
-            foreach (Jadwal jadwal in listJadwal)
-            {
-                NpgsqlCommand cmd = koneksi.CreateCommand();
-                cmd.CommandText = "UPDATE jadwal_dokter SET hari = @hari, jam_mulai = @mulai, jam_selesai = @selesai WHERE id_jadwal = @id";
-                cmd.Parameters.AddWithValue("hari", jadwal.hari);
-                cmd.Parameters.AddWithValue("mulai", jadwal.jamMulai);
-                cmd.Parameters.AddWithValue("selesai", jadwal.jamSelesai);
-                cmd.Parameters.AddWithValue("id", jadwal.idJadwal);
-                cmd.Transaction = transaksi;
-                cmd.ExecuteNonQuery();
-            }
-            transaksi.Commit();
+            NpgsqlCommand query = koneksi.CreateCommand();
+            query.CommandText = @"update antrian_pengunjung
+                                  set id_status = 2
+                                  where id_antrian = @idAntrian";
+            query.Parameters.AddWithValue("idAntrian", antrian.idAntrian);
+            query.ExecuteNonQuery();
             koneksi.Close();
-            return true;
+            antrian.statusAntrian = "sudah selesai";
         }
+
+        public void tandaiMasuk(Antrian antrian)
+        {
+            NpgsqlConnection koneksi = KoneksiDatabase.BuatKoneksi();
+            koneksi.Open();
+            NpgsqlCommand query = koneksi.CreateCommand();
+            query.CommandText = @"update antrian_pengunjung
+                                  set id_status = 1
+                                  where id_antrian = @idantrian";
+            query.Parameters.AddWithValue("idAntrian", antrian.idAntrian);
+            query.ExecuteNonQuery();
+            koneksi.Close();
+            antrian.statusAntrian = "sudah masuk";
+        }
+
+        public List<List<string>> getLabel()
+        {
+            List<List<string>> labels = new List<List<string>>();
+            NpgsqlConnection koneksi = KoneksiDatabase.BuatKoneksi();
+            koneksi.Open();
+            NpgsqlCommand query = koneksi.CreateCommand();
+            query.CommandText = @"select label, nama_jenis_dokter from jenis_dokter";
+            NpgsqlDataReader reader = query.ExecuteReader();
+            while (reader.Read())
+            {
+                string label = reader.GetString(0);
+                string nama = reader.GetString(1);
+                labels.Add([label, nama]);
+            }
+            koneksi.Close();
+            return labels;
+        }
+
+        
     }
 }
