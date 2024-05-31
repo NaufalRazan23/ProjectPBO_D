@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace ProjectPBO.controllers
 {
-    public class AdminAntrianView
+    public class AdminAntrianController
     {
         public List<Antrian> listAntrian = new List<Antrian>();
         public List<List<string>> label = [];
 
-        public AdminAntrianView()
+        public AdminAntrianController()
         {
             this.listAntrian = this.getAntrian();
             this.label = this.getLabel();
