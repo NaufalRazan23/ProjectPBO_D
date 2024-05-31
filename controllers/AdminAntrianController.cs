@@ -79,7 +79,7 @@ namespace ProjectPBO.controllers
             koneksi.Open();
             NpgsqlCommand query = koneksi.CreateCommand();
             query.CommandText = @"update antrian_pengunjung
-                                  set id_status = 2
+                                  set id_status = 3
                                   where id_antrian = @idAntrian";
             query.Parameters.AddWithValue("idAntrian", antrian.idAntrian);
             query.ExecuteNonQuery();
@@ -93,7 +93,7 @@ namespace ProjectPBO.controllers
             koneksi.Open();
             NpgsqlCommand query = koneksi.CreateCommand();
             query.CommandText = @"update antrian_pengunjung
-                                  set id_status = 1
+                                  set id_status = 2
                                   where id_antrian = @idantrian";
             query.Parameters.AddWithValue("idAntrian", antrian.idAntrian);
             query.ExecuteNonQuery();
