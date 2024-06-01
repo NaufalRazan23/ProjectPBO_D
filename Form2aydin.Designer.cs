@@ -1,6 +1,6 @@
 ﻿namespace ProjectPBO
 {
-    partial class Form2
+    partial class Aydin2
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             SuspendLayout();
             // 
-            // Form2
+            // Aydin2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Name = "Form2";
-            Text = "Form2";
-            Load += Form2_Load;
+            Name = "Aydin2";
+            Text = "Aydin2";
+            Load += Aydin2_Load;
             ResumeLayout(false);
         }
 
