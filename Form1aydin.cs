@@ -1,6 +1,6 @@
 namespace ProjectPBO
 {
-    public partial class Form1 : Form
+    public partial class Aydin1 : Aydin
     {
         public Aydin1()
         {
