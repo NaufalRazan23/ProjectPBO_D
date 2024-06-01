@@ -2,7 +2,7 @@ namespace ProjectPBO
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public Aydin1()
         {
             InitializeComponent();
         }
