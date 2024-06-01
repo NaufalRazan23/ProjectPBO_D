@@ -8,11 +8,11 @@ namespace ProjectPBO.models
 {
     public class Antrian
     {
-        public int idAntrian;
-        public int nomorAntrian;
-        public string atasNama;
-        public string statusAntrian;
-        public string labelAntrian;
+        public int idAntrian { get; set; }
+        public int nomorAntrian { get; set; }
+        public string atasNama { get; set; }
+        public string statusAntrian { get; set; }
+        public string labelAntrian { get; set; }
         public Dokter dokter;
 
         public Antrian(int idAntrian, int nomorAntrian, string atasNama, string statusAntrian, string labelAntrian, Dokter dokter)

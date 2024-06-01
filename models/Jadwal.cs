@@ -8,8 +8,8 @@ namespace ProjectPBO.models
 {
     public class Jadwal
     {
-        public int idJadwal;
-        public string hari;
+        public int idJadwal {  get; set; }
+        public string hari {  get; set; }
         public TimeOnly jamSelesai;
         public TimeOnly jamMulai;
         public Dokter dokter;

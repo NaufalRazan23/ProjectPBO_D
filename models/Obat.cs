@@ -8,9 +8,9 @@ namespace ProjectPBO.models
 {
     public class Obat
     {
-        public int idObat;
-        public string nama;
-        public string jenis;
+        public int idObat {  get; set; }
+        public string nama { get; set; }
+        public string jenis { get; set; }
 
         public Obat(int idObat, string nama, string jenis)
         {

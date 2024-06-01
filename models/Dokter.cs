@@ -8,10 +8,10 @@ namespace ProjectPBO.models
 {
     public class Dokter
     {
-        public int idDokter;
-        public string nama;
-        public string email;
-        public string jenisDokter;
+        public int idDokter {  get; set; }
+        public string nama {  get; set; }
+        public string email { get; set; }
+        public string jenisDokter { get; set; }
 
         public Dokter(int idDokter, string nama, string email, string jenisDokter)
         {
