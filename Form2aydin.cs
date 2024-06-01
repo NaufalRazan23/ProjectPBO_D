@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace ProjectPBO
 {
-    public partial class Form2 : Form
+    public partial class Aydin2 : Aydin
     {
-        public Form2()
+        public Aydin2()
         {
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void Aydin2_Load(object sender, EventArgs e)
         {
 
         }
