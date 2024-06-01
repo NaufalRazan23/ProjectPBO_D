@@ -1,6 +1,6 @@
 ﻿namespace ProjectPBO
 {
-    partial class Form1
+    partial class Aydin1
     {
         /// <summary>
         ///  Required designer variable.
@@ -62,15 +62,15 @@
             comboBox1.Size = new Size(380, 23);
             comboBox1.TabIndex = 1;
             // 
-            // Form1
+            // Aydin1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(comboBox1);
             Controls.Add(guna2ComboBox1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "Aydin1";
+            Text = "Aydin1";
             ResumeLayout(false);
         }
 
