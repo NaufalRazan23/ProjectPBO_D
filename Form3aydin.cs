@@ -6,13 +6,13 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Windows.Aydins;
 
 namespace ProjectPBO
 {
-    public partial class Form3 : Form
+    public partial class Aydin3 : Aydin
     {
-        public Form3()
+        public Aydin3()
         {
             InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace ProjectPBO
 
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void Aydin3_Load(object sender, EventArgs e)
         {
 
         }
