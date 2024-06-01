@@ -1,6 +1,6 @@
 ﻿namespace ProjectPBO
 {
-    partial class EditJadwalDoktor
+    partial class EditJadwalDokter
     {
         /// <summary>
         /// Required designer variable.

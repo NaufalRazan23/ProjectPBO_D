@@ -11,13 +11,13 @@ using System.Windows.Forms;
 
 namespace ProjectPBO
 {
-    public partial class EditJadwalDoktor : Form
+    public partial class EditJadwalDokter : Form
     {
 
         private List<DoktorSpesialis> doktorSpesialis = new List<DoktorSpesialis>();
         private List<DoktorSpesialis> doktorSpesialis2 = new List<DoktorSpesialis>();
 
-        public EditJadwalDoktor()
+        public EditJadwalDokter()
         {
             InitializeComponent();
             doktorSpesialis.Add(new DoktorSpesialis("Dr. Amanda", "Anak", "Senin", "09:00-12:00"));
