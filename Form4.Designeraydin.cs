@@ -1,6 +1,6 @@
 ﻿namespace ProjectPBO
 {
-    partial class Form4
+    partial class Aydin4
     {
         /// <summary>
         /// Required designer variable.
@@ -850,7 +850,7 @@
             label8.TabIndex = 1;
             label8.Text = "DOKTER SPESIALIS ANAK";
             // 
-            // Form4
+            // Aydin4
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -921,8 +921,8 @@
             Controls.Add(panel1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form4";
-            Text = "Form4";
+            Name = "Aydin4";
+            Text = "Aydin4";
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
             panel11.ResumeLayout(false);
