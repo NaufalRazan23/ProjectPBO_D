@@ -1,6 +1,6 @@
 ﻿namespace ProjectPBO
 {
-    partial class Form3
+    partial class Aydin3
     {
         /// <summary>
         /// Required designer variable.
@@ -124,7 +124,7 @@
             label1.Text = "JADWAL DOKTER SPESIALIS";
             label1.Click += label1_Click;
             // 
-            // Form3
+            // Aydin3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -134,8 +134,8 @@
             Controls.Add(Hari);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(tableLayoutPddanel2);
-            Name = "Form3";
-            Text = "Form3";
+            Name = "Aydin3";
+            Text = "Aydin3";
             ResumeLayout(false);
             PerformLayout();
         }
