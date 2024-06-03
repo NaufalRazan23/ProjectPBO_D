@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ProjectPBO
 {
-    public partial class Aydin4 : Aydin
+    public partial class Aydin4 : Form
     {
         public Aydin4()
         {
