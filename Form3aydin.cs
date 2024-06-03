@@ -10,7 +10,7 @@ using System.Windows.Aydins;
 
 namespace ProjectPBO
 {
-    public partial class Aydin3 : Aydin
+    public partial class Aydin3 : Aydin3
     {
         public Aydin3()
         {
