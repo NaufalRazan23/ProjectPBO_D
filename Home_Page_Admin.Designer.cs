@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -43,41 +43,39 @@
             label1.TabIndex = 0;
             label1.Text = "HOME PAGE ADMIN";
             // 
-            // textBox1
+            // button1
             // 
-            textBox1.BackColor = SystemColors.InactiveCaptionText;
-            textBox1.Font = new Font("Segoe UI", 40F);
-            textBox1.ForeColor = SystemColors.InactiveBorder;
-            textBox1.Location = new Point(129, 254);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(342, 242);
-            textBox1.TabIndex = 1;
-            textBox1.Text = "ATUR ANTRIAN";
-            textBox1.TextAlign = HorizontalAlignment.Center;
+            button1.BackColor = SystemColors.ActiveCaptionText;
+            button1.Font = new Font("Segoe UI", 40F);
+            button1.ForeColor = SystemColors.ButtonFace;
+            button1.Location = new Point(59, 205);
+            button1.Name = "button1";
+            button1.Size = new Size(414, 330);
+            button1.TabIndex = 3;
+            button1.Text = "ATUR ANTRIAN";
+            button1.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // button2
             // 
-            textBox2.BackColor = SystemColors.InactiveCaptionText;
-            textBox2.Font = new Font("Segoe UI", 40F);
-            textBox2.ForeColor = SystemColors.InactiveBorder;
-            textBox2.Location = new Point(656, 254);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(342, 242);
-            textBox2.TabIndex = 2;
-            textBox2.Text = "EDIT ADWAL";
-            textBox2.TextAlign = HorizontalAlignment.Center;
+            button2.BackColor = SystemColors.ActiveCaptionText;
+            button2.Font = new Font("Segoe UI", 40F);
+            button2.ForeColor = SystemColors.ButtonFace;
+            button2.Location = new Point(598, 205);
+            button2.Name = "button2";
+            button2.Size = new Size(414, 330);
+            button2.TabIndex = 4;
+            button2.Text = "EDIT JADWAL";
+            button2.UseVisualStyleBackColor = false;
             // 
-            // Form2
+            // Home_Page_Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1119, 607);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(label1);
-            Name = "Form2";
+            Name = "Home_Page_Admin";
             Text = "Form2";
             Load += Form2_Load;
             ResumeLayout(false);
@@ -87,7 +85,7 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private Button button1;
+        private Button button2;
     }
 }
