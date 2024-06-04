@@ -26,5 +26,19 @@ namespace ProjectPBO
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            buatantrian buatantrian = new buatantrian();
+            buatantrian.Show();
+            this.Hide();
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            KonsultasiForm konsultasiForm = new KonsultasiForm();
+            konsultasiForm.Show();
+            this.Hide();
+        }
     }
 }
