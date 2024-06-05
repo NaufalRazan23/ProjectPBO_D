@@ -15,6 +15,18 @@ namespace ProjectPBO
         public Tampilan_nomor_antrian()
         {
             InitializeComponent();
+            this.FormClosed += new FormClosedEventHandler(Tampilan_nomor_antrian_FormClosed);
+        }
+
+        private void Tampilan_nomor_antrian_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Tampilan_nomor_antrian_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Home_Page_Admin home_Page_Admin = new Home_Page_Admin();
+            home_Page_Admin.Show();
         }
     }
 }

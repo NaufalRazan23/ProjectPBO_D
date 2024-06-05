@@ -71,5 +71,11 @@ namespace ProjectPBO
         {
             this.Close();
         }
+
+        private void EditJadwalDokter_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

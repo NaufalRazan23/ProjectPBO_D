@@ -48,9 +48,10 @@
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Arial", 24F, FontStyle.Bold);
-            guna2HtmlLabel1.Location = new Point(208, 12);
+            guna2HtmlLabel1.Location = new Point(260, 15);
+            guna2HtmlLabel1.Margin = new Padding(4, 4, 4, 4);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(673, 48);
+            guna2HtmlLabel1.Size = new Size(811, 58);
             guna2HtmlLabel1.TabIndex = 1;
             guna2HtmlLabel1.Text = "EDIT JADWAL DOKTOR SPESIALIS";
             // 
@@ -77,11 +78,13 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             guna2DataGridView1.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.Location = new Point(22, 112);
+            guna2DataGridView1.Location = new Point(28, 140);
+            guna2DataGridView1.Margin = new Padding(4, 4, 4, 4);
             guna2DataGridView1.Name = "guna2DataGridView1";
             guna2DataGridView1.RowHeadersVisible = false;
             guna2DataGridView1.RowHeadersWidth = 51;
-            guna2DataGridView1.Size = new Size(494, 488);
+            guna2DataGridView1.RowTemplate.Height = 29;
+            guna2DataGridView1.Size = new Size(618, 610);
             guna2DataGridView1.TabIndex = 2;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -128,11 +131,13 @@
             dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
             guna2DataGridView2.DefaultCellStyle = dataGridViewCellStyle6;
             guna2DataGridView2.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView2.Location = new Point(550, 112);
+            guna2DataGridView2.Location = new Point(688, 140);
+            guna2DataGridView2.Margin = new Padding(4, 4, 4, 4);
             guna2DataGridView2.Name = "guna2DataGridView2";
             guna2DataGridView2.RowHeadersVisible = false;
             guna2DataGridView2.RowHeadersWidth = 51;
-            guna2DataGridView2.Size = new Size(494, 488);
+            guna2DataGridView2.RowTemplate.Height = 29;
+            guna2DataGridView2.Size = new Size(618, 610);
             guna2DataGridView2.TabIndex = 3;
             guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -167,24 +172,27 @@
             btnBack.Font = new Font("Segoe UI", 9F);
             btnBack.ForeColor = Color.White;
             btnBack.Image = Properties.Resources.backbutton;
-            btnBack.Location = new Point(12, 12);
+            btnBack.Location = new Point(15, 15);
+            btnBack.Margin = new Padding(4, 4, 4, 4);
             btnBack.Name = "btnBack";
             btnBack.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnBack.Size = new Size(54, 41);
+            btnBack.Size = new Size(68, 51);
             btnBack.TabIndex = 7;
             btnBack.Click += btnBack_Click;
             // 
-            // EditJadwalDoktor
+            // EditJadwalDokter
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1071, 631);
+            ClientSize = new Size(1339, 789);
             Controls.Add(btnBack);
             Controls.Add(guna2DataGridView2);
             Controls.Add(guna2DataGridView1);
             Controls.Add(guna2HtmlLabel1);
-            Name = "EditJadwalDoktor";
+            Margin = new Padding(4, 4, 4, 4);
+            Name = "EditJadwalDokter";
             Text = "EditJadwalDoktor";
+            Load += EditJadwalDokter_Load;
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView2).EndInit();
             ResumeLayout(false);

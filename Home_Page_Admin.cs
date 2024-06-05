@@ -21,5 +21,20 @@ namespace ProjectPBO
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            Tampilan_nomor_antrian tampilan_Nomor_Antrian = new Tampilan_nomor_antrian();
+            tampilan_Nomor_Antrian.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            EditJadwalDokter  editJadwalDokter = new EditJadwalDokter();
+            editJadwalDokter.Show();
+            this.Hide();
+        }
     }
 }
