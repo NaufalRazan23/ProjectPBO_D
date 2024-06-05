@@ -1,4 +1,25 @@
-﻿namespace ProjectPBO
+﻿namespace ojectPBO
+{
+    public class Home_Page_User
+    {
+        public void SomeMethod()
+        {
+            // Implementasi metode
+        }
+    }
+}
+namespace ojectPBO
+{
+    public class Home_Page_Admin
+    {
+        public void SomeMethod()
+        {
+            // Implementasi metode
+        }
+    }
+}
+
+namespace ProjectPBO
 {
     partial class Form1
     {
