@@ -95,6 +95,7 @@
             guna2Button2.Size = new Size(261, 44);
             guna2Button2.TabIndex = 6;
             guna2Button2.Text = "JADWAL DOKTER";
+            guna2Button2.Click += guna2Button2_Click;
             // 
             // guna2TextBox1
             // 

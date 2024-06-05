@@ -21,5 +21,18 @@ namespace ProjectPBO
         {
 
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            
+            Jadwal_dokter_spesialis jadwalDokterSpesialisForm = new Jadwal_dokter_spesialis();
+
+            jadwalDokterSpesialisForm.Show();
+
+            this.Hide();
+
+            jadwalDokterSpesialisForm.FormClosed += (s, args) => this.Close();
+            
+        }
     }
 }

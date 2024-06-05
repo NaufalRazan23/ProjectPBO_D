@@ -21,5 +21,15 @@ namespace ProjectPBO
         {
             this.Close();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            
+            RekomendasiObatForm rekomendasiObatForm = new RekomendasiObatForm();
+            rekomendasiObatForm.Show();
+            this.Hide();
+            rekomendasiObatForm.FormClosed += (s, args) => this.Close();
+        }
+
     }
 }

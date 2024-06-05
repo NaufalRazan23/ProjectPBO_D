@@ -106,6 +106,7 @@
             guna2Button1.Size = new Size(161, 56);
             guna2Button1.TabIndex = 3;
             guna2Button1.Text = "SUBMIT";
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // btnBack
             // 
