@@ -9,21 +9,15 @@ namespace ProjectPBO
 
         private void label1_Click(object sender, EventArgs e)
         {
-            // Membuat instance dari Tampilan_nomor_antrian
-            Home_Page_Admin _HopePageAdmin = new Home_Page_Admin();
-            // Menampilkan Tampilan_nomor_antrian
-            _HopePageAdmin.Show();
-            // Menyembunyikan Home_Page_Admin
+            Home_Page_User _HopePageUser = new Home_Page_User();
+            _HopePageUser.Show();
             this.Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-            // Membuat instance dari Tampilan_nomor_antrian
-            Home_Page_User _HopePageUser = new Home_Page_User();
-            // Menampilkan Tampilan_nomor_antrian
-            _HopePageUser.Show();
-            // Menyembunyikan Home_Page_Admin
+            Home_Page_Admin _HopePageAdmin = new Home_Page_Admin();
+            _HopePageAdmin.Show();
             this.Hide();
         }
 

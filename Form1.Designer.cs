@@ -7,9 +7,7 @@
             // Implementasi metode
         }
     }
-}
-namespace ojectPBO
-{
+
     public class Home_Page_Admin
     {
         public void SomeMethod()
@@ -92,7 +90,7 @@ namespace ProjectPBO
             label2.Size = new Size(56, 20);
             label2.TabIndex = 1;
             label2.Text = "Admin";
-            label2.Click += label1_Click;
+            label2.Click += label2_Click;
             // 
             // label1
             // 
