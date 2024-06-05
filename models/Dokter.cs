@@ -21,5 +21,4 @@ namespace ProjectPBO.models
             this.jenisDokter = jenisDokter;
         }
     }
-    
 }
