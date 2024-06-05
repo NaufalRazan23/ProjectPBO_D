@@ -32,9 +32,14 @@ namespace ProjectPBO
 
         private void button2_Click(object sender, EventArgs e)
         {
-            EditJadwalDokter  editJadwalDokter = new EditJadwalDokter();
+            EditJadwalDokter editJadwalDokter = new EditJadwalDokter();
             editJadwalDokter.Show();
             this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -40,5 +40,10 @@ namespace ProjectPBO
             konsultasiForm.Show();
             this.Hide();
         }
+
+        private void label_back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
