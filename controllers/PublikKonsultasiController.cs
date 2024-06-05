@@ -1,21 +1,20 @@
-﻿using ProjectPBO.models;
-using Npgsql;
+﻿using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using ProjectPBO.models;
 
 namespace ProjectPBO
 {
     public class PublikKonsultasiController
     {
-        // Sementara
-        // private Form2 view;
         public SistemKonsultasi sistemKonsultasi;
 
-        public PublikKonsultasiController(SistemKonsultasi sistemKonsultasi) {
+        public PublikKonsultasiController(SistemKonsultasi sistemKonsultasi)
+        {
             this.sistemKonsultasi = sistemKonsultasi;
             this.sistemKonsultasi.daftarPenyakit = this.GetListPenyakit();
         }
@@ -41,7 +40,9 @@ namespace ProjectPBO
             return listPenyakit;
         }
 
-        public List<Gejala> GetListGejala() {
+        // Method untuk membaca semua gejala di database
+        public List<Gejala> GetListGejala()
+        {
             List<Gejala> listGejala = new List<Gejala>();
             NpgsqlConnection koneksi = KoneksiDatabase.BuatKoneksi();
             koneksi.Open();
@@ -59,6 +60,7 @@ namespace ProjectPBO
             return listGejala;
         }
 
+        // Method untuk membaca gejala di database dari suatu penyakit
         public List<Gejala> getGejalaFromPenyakit(Penyakit penyakit)
         {
             int idPenyakit = penyakit.idPenyakit;
@@ -81,7 +83,9 @@ namespace ProjectPBO
             return listGejala;
         }
 
-        public List<Obat> getObatFromPenyakit(Penyakit penyakit) {
+        // Method untuk membaca obat di database dari suatu penyakit
+        public List<Obat> getObatFromPenyakit(Penyakit penyakit)
+        {
             int idPenyakit = penyakit.idPenyakit;
             List<Obat> listObat = new List<Obat>();
             NpgsqlConnection koneksi = KoneksiDatabase.BuatKoneksi();

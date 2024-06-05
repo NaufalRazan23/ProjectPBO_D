@@ -1,10 +1,10 @@
 ﻿using Npgsql;
-using ProjectPBO.models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProjectPBO.models;
 
 namespace ProjectPBO.controllers
 {
@@ -19,6 +19,7 @@ namespace ProjectPBO.controllers
             this.label = this.getLabel();
         }
 
+        // Method untuk mendapatkan semua antrian hari ini dari database
         public List<Antrian> getAntrian()
         {
             List<Antrian> listAntrian = new List<Antrian>();
@@ -55,6 +56,9 @@ namespace ProjectPBO.controllers
             return listAntrian;
         }
 
+        // Method untuk mendapatkan satu antrian yang sedang berlangsung
+        // berdasarkan label. Method ini tidak membaca database, melainkan
+        // menggunakan field ListAntrian
         public Antrian? getAntrianSekarang(string label)
         {
             Antrian? antrianSekarang = null;
@@ -73,6 +77,8 @@ namespace ProjectPBO.controllers
             return antrianSekarang;
         }
 
+        // Method untuk menandai antrian di database sebagai selesai
+        // (query UPDATE)
         public void tandaiSelesai(Antrian antrian)
         {
             NpgsqlConnection koneksi = KoneksiDatabase.BuatKoneksi();
@@ -87,6 +93,8 @@ namespace ProjectPBO.controllers
             antrian.statusAntrian = "sudah selesai";
         }
 
+        // Method untuk menandai antrian di database sebagai 'masuk'
+        // (query UPDATE)
         public void tandaiMasuk(Antrian antrian)
         {
             NpgsqlConnection koneksi = KoneksiDatabase.BuatKoneksi();
@@ -101,6 +109,7 @@ namespace ProjectPBO.controllers
             antrian.statusAntrian = "sudah masuk";
         }
 
+        // Method untuk membaca semua label dari database.
         public List<List<string>> getLabel()
         {
             List<List<string>> labels = new List<List<string>>();
@@ -119,6 +128,6 @@ namespace ProjectPBO.controllers
             return labels;
         }
 
-        
+
     }
 }

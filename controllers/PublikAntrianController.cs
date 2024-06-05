@@ -1,17 +1,15 @@
 ﻿using Npgsql;
-using ProjectPBO.models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProjectPBO.models;
 
 namespace ProjectPBO.controllers
 {
     public class PublikAntrianController
     {
-        // Sementara
-        // private ???? view;
         public List<Antrian> listAntrian = new List<Antrian>();
         public List<List<string>> label = []; // [["A", "Dokter Poli Umum"], ["B", "Dokter Spesialis Gigi Mulut"], dst.]
 
@@ -21,6 +19,7 @@ namespace ProjectPBO.controllers
             this.label = this.getLabel();
         }
 
+        // Method untuk mendapatkan semua antrian hari ini dari database
         public List<Antrian> getAntrian()
         {
             List<Antrian> listAntrian = new List<Antrian>();
@@ -50,13 +49,16 @@ namespace ProjectPBO.controllers
                 string jenis = reader.GetString(8);
 
                 Dokter dokter = new Dokter(idDokter, nama, email, jenis);
-                Antrian antrian= new Antrian(idAntrian, nomorAntrian, atasNama, statusAntrian, labelAntrian, dokter);
+                Antrian antrian = new Antrian(idAntrian, nomorAntrian, atasNama, statusAntrian, labelAntrian, dokter);
                 listAntrian.Add(antrian);
             }
             koneksi.Close();
             return listAntrian;
         }
 
+        // Method untuk mendapatkan satu antrian yang sedang berlangsung
+        // berdasarkan label. Method ini tidak membaca database, melainkan
+        // menggunakan field ListAntrian
         public Antrian? getAntrianSekarang(string label)
         {
             Antrian? antrianSekarang = null;
@@ -65,7 +67,8 @@ namespace ProjectPBO.controllers
                 if (antrian.labelAntrian != label || antrian.statusAntrian == "sudah selesai")
                 {
                     continue;
-                } else
+                }
+                else
                 {
                     antrianSekarang = antrian;
                     break;
@@ -74,6 +77,7 @@ namespace ProjectPBO.controllers
             return antrianSekarang;
         }
 
+        // Method untuk membaca semua label dari database.
         public List<List<string>> getLabel()
         {
             List<List<string>> labels = new List<List<string>>();
@@ -92,22 +96,23 @@ namespace ProjectPBO.controllers
             return labels;
         }
 
+        // Method untuk membaca satu dokter dari database yang sedang
+        // bekerja berdasarkan label. Method ini digunakan untuk memastikan
+        // ada dokter yang sedang bekerja saat antrian dibuat
         public List<Dokter> getDokterYangSedangBekerja(string label)
         {
-            var culture = new System.Globalization.CultureInfo("id-ID");
-            var day = culture.DateTimeFormat.GetDayName(DateTime.Today.DayOfWeek);
+            var day = ((int)DateTime.Today.DayOfWeek);
             List<Dokter> listDokter = new List<Dokter>();
             NpgsqlConnection koneksi = KoneksiDatabase.BuatKoneksi();
             koneksi.Open();
             NpgsqlCommand query = koneksi.CreateCommand();
             query.CommandText = $@"select d.id_dokter, d.nama_dokter, d.email_dokter, jen.nama_jenis_dokter from jenis_dokter jen
             join dokter d on (d.id_jenis_dokter = jen.id_jenis_dokter)
-            join jadwal_dokter jad on (jad.id_jadwal = d.id_jadwal)
+            join jadwal_dokter jad on (jad.id_dokter = d.id_dokter)
             where
                 jen.label = '{label}'
 	            and now()::time between jad.jam_mulai and jad.jam_selesai
-                and jad.hari = '{day}'
-	            and d.status = '1'";
+                and jad.hari = {day}";
             NpgsqlDataReader reader = query.ExecuteReader();
             while (reader.Read())
             {
@@ -123,6 +128,10 @@ namespace ProjectPBO.controllers
             return listDokter;
         }
 
+        // Method untuk menambah antrian (INSERT ke database).
+        // Method ini memanggil method getDokterYangSedangBekerja
+        // untuk mendapatkan id dokter yang sedang bekerja sesuai
+        // jenis antriannya.
         public Antrian? addAntrian(string atasNama, string label)
         {
             Antrian? antrian = null;
