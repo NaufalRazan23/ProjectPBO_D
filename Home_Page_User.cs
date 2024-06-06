@@ -30,6 +30,7 @@ namespace ProjectPBO
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             buatantrian buatantrian = new buatantrian();
+            buatantrian.FormClosed += (s, args) => this.Show();
             buatantrian.Show();
             this.Hide();
         }
@@ -37,6 +38,7 @@ namespace ProjectPBO
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
             KonsultasiForm konsultasiForm = new KonsultasiForm();
+            konsultasiForm.FormClosed += (s, args) => this.Show();
             konsultasiForm.Show();
             this.Hide();
         }

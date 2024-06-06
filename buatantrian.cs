@@ -54,5 +54,10 @@ namespace ProjectPBO
         {
 
         }
+
+        private void label_back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

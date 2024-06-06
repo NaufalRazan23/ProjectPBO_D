@@ -110,6 +110,7 @@
             LabelAntriansaatiniumum2 = new Panel();
             LabelAntriansaatiniumum1 = new Panel();
             label1 = new Label();
+            labelquitnjg = new Label();
             panel45.SuspendLayout();
             panel47.SuspendLayout();
             panel34.SuspendLayout();
@@ -854,12 +855,26 @@
             label1.Size = new Size(142, 13);
             label1.TabIndex = 65;
             label1.Text = "NOMOR ANTRIAN SAAT INI";
+            label1.Click += label1_Click;
+            // 
+            // labelquitnjg
+            // 
+            labelquitnjg.AccessibleName = "labelquitnj";
+            labelquitnjg.AutoSize = true;
+            labelquitnjg.Font = new Font("Segoe UI", 40F);
+            labelquitnjg.Location = new Point(12, 9);
+            labelquitnjg.Name = "labelquitnjg";
+            labelquitnjg.Size = new Size(67, 72);
+            labelquitnjg.TabIndex = 131;
+            labelquitnjg.Text = "<";
+            labelquitnjg.Click += this.label_kembali;
             // 
             // Tampilan_nomor_antrian
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1093, 595);
+            Controls.Add(labelquitnjg);
             Controls.Add(panel45);
             Controls.Add(panel46);
             Controls.Add(panel47);
@@ -1036,5 +1051,6 @@
         private Panel LabelAntriansaatiniumum2;
         private Panel LabelAntriansaatiniumum1;
         private Label label1;
+        private Label labelquitnjg;
     }
 }

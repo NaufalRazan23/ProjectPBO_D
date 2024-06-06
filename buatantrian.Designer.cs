@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             IniNomorHp = new Guna.UI2.WinForms.Guna2TextBox();
@@ -76,6 +76,7 @@
             panel23 = new Panel();
             panel24 = new Panel();
             label6 = new Label();
+            label_back = new Label();
             panel9.SuspendLayout();
             panel17.SuspendLayout();
             SuspendLayout();
@@ -83,7 +84,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(56, 128);
+            label1.Location = new Point(136, 128);
             label1.Name = "label1";
             label1.Size = new Size(192, 15);
             label1.TabIndex = 0;
@@ -92,7 +93,7 @@
             // guna2ComboBox1
             // 
             guna2ComboBox1.BackColor = Color.Transparent;
-            guna2ComboBox1.CustomizableEdges = customizableEdges13;
+            guna2ComboBox1.CustomizableEdges = customizableEdges1;
             guna2ComboBox1.DrawMode = DrawMode.OwnerDrawFixed;
             guna2ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             guna2ComboBox1.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -103,14 +104,14 @@
             guna2ComboBox1.Location = new Point(229, 348);
             guna2ComboBox1.Margin = new Padding(3, 2, 3, 2);
             guna2ComboBox1.Name = "guna2ComboBox1";
-            guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2ComboBox1.Size = new Size(504, 36);
             guna2ComboBox1.TabIndex = 4;
             guna2ComboBox1.SelectedIndexChanged += guna2ComboBox1_SelectedIndexChanged;
             // 
             // IniNomorHp
             // 
-            IniNomorHp.CustomizableEdges = customizableEdges15;
+            IniNomorHp.CustomizableEdges = customizableEdges3;
             IniNomorHp.DefaultText = "Masukan Nomor hp";
             IniNomorHp.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             IniNomorHp.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -124,13 +125,13 @@
             IniNomorHp.PasswordChar = '\0';
             IniNomorHp.PlaceholderText = "";
             IniNomorHp.SelectedText = "";
-            IniNomorHp.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            IniNomorHp.ShadowDecoration.CustomizableEdges = customizableEdges4;
             IniNomorHp.Size = new Size(503, 27);
             IniNomorHp.TabIndex = 7;
             // 
             // guna2Button1
             // 
-            guna2Button1.CustomizableEdges = customizableEdges17;
+            guna2Button1.CustomizableEdges = customizableEdges5;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -141,7 +142,7 @@
             guna2Button1.Location = new Point(355, 397);
             guna2Button1.Margin = new Padding(3, 2, 3, 2);
             guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2Button1.Size = new Size(277, 32);
             guna2Button1.TabIndex = 8;
             guna2Button1.Text = "BUAT ANTRIAN";
@@ -150,7 +151,7 @@
             // panel5
             // 
             panel5.BackColor = SystemColors.ActiveCaptionText;
-            panel5.Location = new Point(205, 199);
+            panel5.Location = new Point(285, 199);
             panel5.Name = "panel5";
             panel5.Size = new Size(44, 10);
             panel5.TabIndex = 78;
@@ -158,7 +159,7 @@
             // panel6
             // 
             panel6.BackColor = SystemColors.ActiveCaptionText;
-            panel6.Location = new Point(155, 199);
+            panel6.Location = new Point(235, 199);
             panel6.Name = "panel6";
             panel6.Size = new Size(44, 10);
             panel6.TabIndex = 77;
@@ -166,7 +167,7 @@
             // panel7
             // 
             panel7.BackColor = SystemColors.ActiveCaptionText;
-            panel7.Location = new Point(105, 199);
+            panel7.Location = new Point(185, 199);
             panel7.Name = "panel7";
             panel7.Size = new Size(44, 10);
             panel7.TabIndex = 76;
@@ -174,14 +175,14 @@
             // panel8
             // 
             panel8.BackColor = SystemColors.ActiveCaptionText;
-            panel8.Location = new Point(55, 199);
+            panel8.Location = new Point(135, 199);
             panel8.Name = "panel8";
             panel8.Size = new Size(44, 10);
             panel8.TabIndex = 75;
             // 
             // IniNamaLengkap
             // 
-            IniNamaLengkap.CustomizableEdges = customizableEdges19;
+            IniNamaLengkap.CustomizableEdges = customizableEdges7;
             IniNamaLengkap.DefaultText = "MASUKKAN NAMA LENGKAP ANDA";
             IniNamaLengkap.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             IniNamaLengkap.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -195,14 +196,14 @@
             IniNamaLengkap.PasswordChar = '\0';
             IniNamaLengkap.PlaceholderText = "";
             IniNamaLengkap.SelectedText = "";
-            IniNamaLengkap.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            IniNamaLengkap.ShadowDecoration.CustomizableEdges = customizableEdges8;
             IniNamaLengkap.Size = new Size(503, 27);
             IniNamaLengkap.TabIndex = 83;
             IniNamaLengkap.TextChanged += IniNamaLengkap_TextChanged;
             // 
             // ButUmum
             // 
-            ButUmum.CustomizableEdges = customizableEdges21;
+            ButUmum.CustomizableEdges = customizableEdges9;
             ButUmum.DisabledState.BorderColor = Color.DarkGray;
             ButUmum.DisabledState.CustomBorderColor = Color.DarkGray;
             ButUmum.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -210,17 +211,17 @@
             ButUmum.FillColor = Color.Black;
             ButUmum.Font = new Font("Segoe UI", 9F);
             ButUmum.ForeColor = Color.White;
-            ButUmum.Location = new Point(37, 216);
+            ButUmum.Location = new Point(117, 216);
             ButUmum.Margin = new Padding(3, 2, 3, 2);
             ButUmum.Name = "ButUmum";
-            ButUmum.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            ButUmum.ShadowDecoration.CustomizableEdges = customizableEdges10;
             ButUmum.Size = new Size(228, 46);
             ButUmum.TabIndex = 85;
             ButUmum.Text = "DOKTER SPESIALIS";
             // 
             // ButSpesial
             // 
-            ButSpesial.CustomizableEdges = customizableEdges23;
+            ButSpesial.CustomizableEdges = customizableEdges11;
             ButSpesial.DisabledState.BorderColor = Color.DarkGray;
             ButSpesial.DisabledState.CustomBorderColor = Color.DarkGray;
             ButSpesial.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -228,10 +229,10 @@
             ButSpesial.FillColor = Color.Black;
             ButSpesial.Font = new Font("Segoe UI", 9F);
             ButSpesial.ForeColor = Color.White;
-            ButSpesial.Location = new Point(707, 216);
+            ButSpesial.Location = new Point(631, 216);
             ButSpesial.Margin = new Padding(3, 2, 3, 2);
             ButSpesial.Name = "ButSpesial";
-            ButSpesial.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            ButSpesial.ShadowDecoration.CustomizableEdges = customizableEdges12;
             ButSpesial.Size = new Size(228, 46);
             ButSpesial.TabIndex = 91;
             ButSpesial.Text = "DOKTER SPESIALIS";
@@ -239,7 +240,7 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaptionText;
-            panel1.Location = new Point(875, 199);
+            panel1.Location = new Point(799, 199);
             panel1.Name = "panel1";
             panel1.Size = new Size(44, 10);
             panel1.TabIndex = 90;
@@ -247,7 +248,7 @@
             // panel2
             // 
             panel2.BackColor = SystemColors.ActiveCaptionText;
-            panel2.Location = new Point(825, 199);
+            panel2.Location = new Point(749, 199);
             panel2.Name = "panel2";
             panel2.Size = new Size(44, 10);
             panel2.TabIndex = 89;
@@ -255,7 +256,7 @@
             // panel3
             // 
             panel3.BackColor = SystemColors.ActiveCaptionText;
-            panel3.Location = new Point(775, 199);
+            panel3.Location = new Point(699, 199);
             panel3.Name = "panel3";
             panel3.Size = new Size(44, 10);
             panel3.TabIndex = 88;
@@ -263,7 +264,7 @@
             // panel4
             // 
             panel4.BackColor = SystemColors.ActiveCaptionText;
-            panel4.Location = new Point(725, 199);
+            panel4.Location = new Point(649, 199);
             panel4.Name = "panel4";
             panel4.Size = new Size(44, 10);
             panel4.TabIndex = 87;
@@ -271,7 +272,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(726, 128);
+            label2.Location = new Point(650, 128);
             label2.Name = "label2";
             label2.Size = new Size(192, 15);
             label2.TabIndex = 86;
@@ -285,7 +286,7 @@
             panel9.Controls.Add(panel15);
             panel9.Controls.Add(panel16);
             panel9.Controls.Add(label4);
-            panel9.Location = new Point(206, 89);
+            panel9.Location = new Point(286, 89);
             panel9.Name = "panel9";
             panel9.Size = new Size(44, 10);
             panel9.TabIndex = 96;
@@ -334,7 +335,7 @@
             // panel10
             // 
             panel10.BackColor = SystemColors.ActiveCaptionText;
-            panel10.Location = new Point(156, 89);
+            panel10.Location = new Point(236, 89);
             panel10.Name = "panel10";
             panel10.Size = new Size(44, 10);
             panel10.TabIndex = 95;
@@ -342,7 +343,7 @@
             // panel11
             // 
             panel11.BackColor = SystemColors.ActiveCaptionText;
-            panel11.Location = new Point(106, 89);
+            panel11.Location = new Point(186, 89);
             panel11.Name = "panel11";
             panel11.Size = new Size(44, 10);
             panel11.TabIndex = 94;
@@ -350,7 +351,7 @@
             // panel12
             // 
             panel12.BackColor = SystemColors.ActiveCaptionText;
-            panel12.Location = new Point(56, 89);
+            panel12.Location = new Point(136, 89);
             panel12.Name = "panel12";
             panel12.Size = new Size(44, 10);
             panel12.TabIndex = 93;
@@ -358,7 +359,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(74, 23);
+            label3.Location = new Point(147, 23);
             label3.Name = "label3";
             label3.Size = new Size(153, 15);
             label3.TabIndex = 92;
@@ -372,7 +373,7 @@
             panel17.Controls.Add(panel20);
             panel17.Controls.Add(panel21);
             panel17.Controls.Add(label5);
-            panel17.Location = new Point(871, 89);
+            panel17.Location = new Point(795, 89);
             panel17.Name = "panel17";
             panel17.Size = new Size(44, 10);
             panel17.TabIndex = 101;
@@ -421,7 +422,7 @@
             // panel22
             // 
             panel22.BackColor = SystemColors.ActiveCaptionText;
-            panel22.Location = new Point(821, 89);
+            panel22.Location = new Point(745, 89);
             panel22.Name = "panel22";
             panel22.Size = new Size(44, 10);
             panel22.TabIndex = 100;
@@ -429,7 +430,7 @@
             // panel23
             // 
             panel23.BackColor = SystemColors.ActiveCaptionText;
-            panel23.Location = new Point(771, 89);
+            panel23.Location = new Point(695, 89);
             panel23.Name = "panel23";
             panel23.Size = new Size(44, 10);
             panel23.TabIndex = 99;
@@ -437,7 +438,7 @@
             // panel24
             // 
             panel24.BackColor = SystemColors.ActiveCaptionText;
-            panel24.Location = new Point(721, 89);
+            panel24.Location = new Point(645, 89);
             panel24.Name = "panel24";
             panel24.Size = new Size(44, 10);
             panel24.TabIndex = 98;
@@ -445,17 +446,29 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(739, 23);
+            label6.Location = new Point(663, 23);
             label6.Name = "label6";
             label6.Size = new Size(153, 15);
             label6.TabIndex = 97;
             label6.Text = "NOMOR ANTRIAN SAAT INI";
+            // 
+            // label_back
+            // 
+            label_back.AutoSize = true;
+            label_back.Font = new Font("Microsoft YaHei", 40F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_back.Location = new Point(-3, 9);
+            label_back.Name = "label_back";
+            label_back.Size = new Size(71, 72);
+            label_back.TabIndex = 102;
+            label_back.Text = "<";
+            label_back.Click += label_back_Click;
             // 
             // buatantrian
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(955, 440);
+            Controls.Add(label_back);
             Controls.Add(panel17);
             Controls.Add(panel22);
             Controls.Add(panel23);
@@ -532,5 +545,6 @@
         private Panel panel23;
         private Panel panel24;
         private Label label6;
+        private Label label_back;
     }
 }

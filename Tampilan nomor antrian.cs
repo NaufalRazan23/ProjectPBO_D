@@ -63,5 +63,23 @@ namespace ProjectPBO
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_kembali(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private Home_Page_Admin Home_Page_AdminInstance;
+
+        // Konstruktor untuk form nomor antrian dengan parameter instance form admin
+        public Tampilan_nomor_antrian(Home_Page_Admin Home_Page_AdminInstance)
+        {
+            InitializeComponent();
+            this.Home_Page_AdminInstance = Home_Page_AdminInstance;
+        }
     }
 }
