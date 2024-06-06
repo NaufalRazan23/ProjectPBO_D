@@ -24,7 +24,7 @@ namespace ProjectPBO
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            
+
             Jadwal_dokter_spesialis jadwalDokterSpesialisForm = new Jadwal_dokter_spesialis();
 
             jadwalDokterSpesialisForm.Show();
@@ -32,7 +32,27 @@ namespace ProjectPBO
             this.Hide();
 
             jadwalDokterSpesialisForm.FormClosed += (s, args) => this.Close();
-            
+
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buatantrian_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IniNamaLengkap_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

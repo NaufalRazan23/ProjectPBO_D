@@ -28,5 +28,40 @@ namespace ProjectPBO
             Home_Page_Admin home_Page_Admin = new Home_Page_Admin();
             home_Page_Admin.Show();
         }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel33_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

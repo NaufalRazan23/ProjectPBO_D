@@ -45,5 +45,10 @@ namespace ProjectPBO
         {
             this.Close();
         }
+
+        private void Home_Page_User_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

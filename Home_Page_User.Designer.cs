@@ -42,7 +42,7 @@
             // 
             labelHomePage.AutoSize = true;
             labelHomePage.Font = new Font("Microsoft YaHei", 40F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelHomePage.Location = new Point(295, 25);
+            labelHomePage.Location = new Point(360, 35);
             labelHomePage.Name = "labelHomePage";
             labelHomePage.Size = new Size(369, 72);
             labelHomePage.TabIndex = 0;
@@ -57,9 +57,9 @@
             btnBuatAntrian.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnBuatAntrian.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnBuatAntrian.FillColor = Color.Black;
-            btnBuatAntrian.Font = new Font("Segoe UI", 45F);
+            btnBuatAntrian.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold);
             btnBuatAntrian.ForeColor = Color.White;
-            btnBuatAntrian.Location = new Point(64, 143);
+            btnBuatAntrian.Location = new Point(97, 253);
             btnBuatAntrian.Margin = new Padding(2);
             btnBuatAntrian.Name = "btnBuatAntrian";
             btnBuatAntrian.ShadowDecoration.CustomizableEdges = customizableEdges2;
@@ -77,9 +77,9 @@
             Btn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             Btn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             Btn.FillColor = Color.Black;
-            Btn.Font = new Font("Segoe UI", 35F);
+            Btn.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Btn.ForeColor = Color.White;
-            Btn.Location = new Point(551, 143);
+            Btn.Location = new Point(648, 253);
             Btn.Margin = new Padding(2);
             Btn.Name = "Btn";
             Btn.ShadowDecoration.CustomizableEdges = customizableEdges4;
@@ -104,14 +104,15 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(959, 449);
+            ClientSize = new Size(1093, 595);
             Controls.Add(label_back);
             Controls.Add(Btn);
             Controls.Add(btnBuatAntrian);
             Controls.Add(labelHomePage);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Home_Page_User";
-            Text = "Form3";
+            Text = "HomepageAntrianUser'";
+            Load += Home_Page_User_Load;
             ResumeLayout(false);
             PerformLayout();
         }

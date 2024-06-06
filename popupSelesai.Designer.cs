@@ -42,9 +42,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(89, 9);
+            label1.Font = new Font("Segoe UI", 30F);
+            label1.Location = new Point(177, 20);
             label1.Name = "label1";
-            label1.Size = new Size(252, 89);
+            label1.Size = new Size(150, 54);
             label1.TabIndex = 0;
             label1.Text = "PASIEN";
             label1.Click += label1_Click;
@@ -52,9 +53,10 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(329, 9);
+            label2.Font = new Font("Segoe UI", 30F);
+            label2.Location = new Point(417, 20);
             label2.Name = "label2";
-            label2.Size = new Size(243, 89);
+            label2.Size = new Size(148, 54);
             label2.TabIndex = 1;
             label2.Text = "A 0 0 1";
             label2.Click += label2_Click;
@@ -62,9 +64,10 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(553, 9);
+            label3.Font = new Font("Segoe UI", 30F);
+            label3.Location = new Point(641, 20);
             label3.Name = "label3";
-            label3.Size = new Size(483, 89);
+            label3.Size = new Size(287, 54);
             label3.TabIndex = 2;
             label3.Text = "TELAH SELESAI";
             // 
@@ -72,9 +75,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 30F);
-            label4.Location = new Point(329, 98);
+            label4.Location = new Point(378, 106);
             label4.Name = "label4";
-            label4.Size = new Size(438, 67);
+            label4.Size = new Size(352, 54);
             label4.TabIndex = 3;
             label4.Text = "NOMOR ANTRIAN";
             label4.Click += label4_Click;
@@ -83,18 +86,20 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 30F);
-            label5.Location = new Point(266, 165);
+            label5.Location = new Point(332, 174);
             label5.Name = "label5";
-            label5.Size = new Size(551, 67);
+            label5.Size = new Size(441, 54);
             label5.TabIndex = 4;
             label5.Text = "SELANJUTNYA ADALAH";
+            label5.Click += label5_Click;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(423, 232);
+            label6.Font = new Font("Segoe UI", 30F);
+            label6.Location = new Point(481, 248);
             label6.Name = "label6";
-            label6.Size = new Size(243, 89);
+            label6.Size = new Size(148, 54);
             label6.TabIndex = 5;
             label6.Text = "A 0 1 0";
             label6.Click += label6_Click;
@@ -103,25 +108,26 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 30F);
-            label7.Location = new Point(395, 321);
+            label7.Location = new Point(426, 326);
             label7.Name = "label7";
-            label7.Size = new Size(299, 67);
+            label7.Size = new Size(240, 54);
             label7.TabIndex = 6;
             label7.Text = "ATAS NAMA";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(451, 388);
+            label8.Font = new Font("Segoe UI", 30F);
+            label8.Location = new Point(498, 403);
             label8.Name = "label8";
-            label8.Size = new Size(194, 89);
+            label8.Size = new Size(115, 54);
             label8.TabIndex = 7;
             label8.Text = "USER";
             // 
             // button1
             // 
             button1.Font = new Font("Segoe UI", 30F);
-            button1.Location = new Point(373, 480);
+            button1.Location = new Point(372, 480);
             button1.Name = "button1";
             button1.Size = new Size(358, 95);
             button1.TabIndex = 8;
@@ -130,7 +136,7 @@
             // 
             // popupSelesai
             // 
-            AutoScaleDimensions = new SizeF(37F, 89F);
+            AutoScaleDimensions = new SizeF(29F, 71F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1091, 587);
             Controls.Add(button1);
@@ -143,7 +149,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 40F);
-            Margin = new Padding(14, 14, 14, 14);
+            Margin = new Padding(14);
             Name = "popupSelesai";
             Text = "popupSelesai";
             ResumeLayout(false);

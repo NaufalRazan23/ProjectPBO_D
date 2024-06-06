@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             dataGridView1 = new DataGridView();
             dataGridView2 = new DataGridView();
+            btnBack = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
@@ -48,6 +51,7 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AccessibleName = "IniDataKanan";
             dataGridView1.BackgroundColor = SystemColors.ButtonFace;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(56, 135);
@@ -58,18 +62,39 @@
             // 
             // dataGridView2
             // 
+            dataGridView2.AccessibleName = "IniDataKiri";
             dataGridView2.BackgroundColor = SystemColors.ButtonFace;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Location = new Point(551, 135);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.Size = new Size(461, 393);
             dataGridView2.TabIndex = 10;
+            dataGridView2.CellContentClick += dataGridView2_CellContentClick;
+            // 
+            // btnBack
+            // 
+            btnBack.CustomizableEdges = customizableEdges3;
+            btnBack.DisabledState.BorderColor = Color.DarkGray;
+            btnBack.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnBack.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnBack.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnBack.FillColor = Color.Empty;
+            btnBack.Font = new Font("Segoe UI", 9F);
+            btnBack.ForeColor = Color.White;
+            btnBack.Image = Properties.Resources.backbutton;
+            btnBack.Location = new Point(12, 28);
+            btnBack.Margin = new Padding(3, 2, 3, 2);
+            btnBack.Name = "btnBack";
+            btnBack.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnBack.Size = new Size(48, 31);
+            btnBack.TabIndex = 11;
             // 
             // Jadwal_dokter_spesialis
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1077, 556);
+            Controls.Add(btnBack);
             Controls.Add(dataGridView2);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
@@ -85,5 +110,6 @@
         private Label label1;
         private DataGridView dataGridView1;
         private DataGridView dataGridView2;
+        private Guna.UI2.WinForms.Guna2Button btnBack;
     }
 }

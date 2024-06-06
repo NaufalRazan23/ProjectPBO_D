@@ -53,8 +53,8 @@ namespace ProjectPBO
             doktorSpesialis2.Add(new DoktorSpesialis("", "", "", ""));
             doktorSpesialis2.Add(new DoktorSpesialis("", "", "", ""));
 
-            guna2DataGridView1.DataSource = doktorSpesialis;
-            guna2DataGridView2.DataSource = doktorSpesialis2;
+            BarKiri.DataSource = doktorSpesialis;
+            BarKanan.DataSource = doktorSpesialis2;
         }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
@@ -77,5 +77,24 @@ namespace ProjectPBO
 
         }
 
+        private void guna2DataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void guna2DataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void guna2ImageButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
