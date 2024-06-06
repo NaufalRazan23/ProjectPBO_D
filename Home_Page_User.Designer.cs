@@ -35,7 +35,6 @@
             labelHomePage = new Label();
             btnBuatAntrian = new Guna.UI2.WinForms.Guna2Button();
             Btn = new Guna.UI2.WinForms.Guna2Button();
-            label_back = new Label();
             SuspendLayout();
             // 
             // labelHomePage
@@ -89,23 +88,11 @@
             Btn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             Btn.Click += guna2Button1_Click_1;
             // 
-            // label_back
-            // 
-            label_back.AutoSize = true;
-            label_back.Font = new Font("Microsoft YaHei", 40F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_back.Location = new Point(12, 9);
-            label_back.Name = "label_back";
-            label_back.Size = new Size(71, 72);
-            label_back.TabIndex = 5;
-            label_back.Text = "<";
-            label_back.Click += label_back_Click;
-            // 
             // Home_Page_User
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1093, 595);
-            Controls.Add(label_back);
             Controls.Add(Btn);
             Controls.Add(btnBuatAntrian);
             Controls.Add(labelHomePage);
@@ -122,6 +109,5 @@
         private Label labelHomePage;
         private Guna.UI2.WinForms.Guna2Button btnBuatAntrian;
         private Guna.UI2.WinForms.Guna2Button Btn;
-        private Label label_back;
     }
 }
