@@ -82,7 +82,7 @@ namespace ProjectPBO
             this.Home_Page_AdminInstance = Home_Page_AdminInstance;
         }
 
-        private void label46_Click(object sender, EventArgs e)
+        private void lblnxtAntrian_Click(object sender, EventArgs e)
         {
             TampilanAntrianUntukDokter tampildkt = new TampilanAntrianUntukDokter();
             tampildkt.FormClosed += (s, args) => this.Show();

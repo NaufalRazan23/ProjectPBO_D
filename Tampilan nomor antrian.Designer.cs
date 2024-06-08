@@ -1303,7 +1303,7 @@
             lblNxtDoc.Size = new Size(67, 72);
             lblNxtDoc.TabIndex = 191;
             lblNxtDoc.Text = "<";
-            lblNxtDoc.Click += label46_Click;
+            lblNxtDoc.Click += lblnxtAntrian_Click;
             // 
             // Tampilan_nomor_antrian
             // 
