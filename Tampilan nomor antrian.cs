@@ -198,6 +198,9 @@ namespace ProjectPBO
             adminAntrianOne.Show();
         }
 
+        private void panel47_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }

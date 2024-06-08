@@ -166,6 +166,7 @@
             panel47.Name = "panel47";
             panel47.Size = new Size(194, 33);
             panel47.TabIndex = 127;
+            panel47.Paint += panel47_Paint;
             // 
             // lblJenisDokter9
             // 
