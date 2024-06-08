@@ -139,6 +139,7 @@
             label43 = new Label();
             label44 = new Label();
             label45 = new Label();
+            lblNxtDoc = new Label();
             panel47.SuspendLayout();
             panel36.SuspendLayout();
             panel25.SuspendLayout();
@@ -1290,11 +1291,26 @@
             label45.Text = "A      0      0     1";
             label45.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // lblNxtDoc
+            // 
+            lblNxtDoc.AccessibleName = "labelquitnj";
+            lblNxtDoc.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            lblNxtDoc.AutoSize = true;
+            lblNxtDoc.Font = new Font("Segoe UI", 40F);
+            lblNxtDoc.Location = new Point(1014, 9);
+            lblNxtDoc.Name = "lblNxtDoc";
+            lblNxtDoc.RightToLeft = RightToLeft.Yes;
+            lblNxtDoc.Size = new Size(67, 72);
+            lblNxtDoc.TabIndex = 191;
+            lblNxtDoc.Text = "<";
+            lblNxtDoc.Click += label46_Click;
+            // 
             // Tampilan_nomor_antrian
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1093, 595);
+            Controls.Add(lblNxtDoc);
             Controls.Add(label45);
             Controls.Add(label44);
             Controls.Add(label43);
@@ -1535,5 +1551,6 @@
         private Label label36;
         private Label label35;
         private Label label34;
+        private Label lblNxtDoc;
     }
 }

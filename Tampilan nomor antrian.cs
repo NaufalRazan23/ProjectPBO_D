@@ -81,5 +81,13 @@ namespace ProjectPBO
             InitializeComponent();
             this.Home_Page_AdminInstance = Home_Page_AdminInstance;
         }
+
+        private void label46_Click(object sender, EventArgs e)
+        {
+            TampilanAntrianUntukDokter tampildkt = new TampilanAntrianUntukDokter();
+            tampildkt.FormClosed += (s, args) => this.Show();
+            tampildkt.Show();
+            this.Hide();
+        }
     }
 }
