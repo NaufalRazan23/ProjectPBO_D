@@ -88,7 +88,7 @@
             // 
             // panel2
             // 
-            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            panel2.Anchor = AnchorStyles.Bottom;
             panel2.AutoScroll = true;
             panel2.BackColor = SystemColors.ActiveCaptionText;
             panel2.Controls.Add(label8);
@@ -177,7 +177,7 @@
             // 
             // lbSymptom
             // 
-            lbSymptom.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lbSymptom.Anchor = AnchorStyles.Left;
             lbSymptom.BackColor = Color.Black;
             lbSymptom.Font = new Font("Arial", 14F);
             lbSymptom.ForeColor = SystemColors.ControlLightLight;
@@ -192,11 +192,11 @@
             // 
             // lbPercentage
             // 
-            lbPercentage.Anchor = AnchorStyles.Right;
+            lbPercentage.Anchor = AnchorStyles.Left;
             lbPercentage.BackColor = Color.Black;
             lbPercentage.Font = new Font("Arial", 16F);
             lbPercentage.ForeColor = SystemColors.ControlLightLight;
-            lbPercentage.Location = new Point(60, 132);
+            lbPercentage.Location = new Point(58, 132);
             lbPercentage.Margin = new Padding(0);
             lbPercentage.Name = "lbPercentage";
             lbPercentage.Padding = new Padding(0, 0, 4, 0);
@@ -208,11 +208,11 @@
             // 
             // label6
             // 
-            label6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label6.Anchor = AnchorStyles.Right;
             label6.BackColor = Color.Black;
             label6.Font = new Font("Arial", 14F);
             label6.ForeColor = SystemColors.ControlLightLight;
-            label6.Location = new Point(659, 130);
+            label6.Location = new Point(655, 130);
             label6.Name = "label6";
             label6.Padding = new Padding(9, 0, 9, 0);
             label6.Size = new Size(284, 75);
