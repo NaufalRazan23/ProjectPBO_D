@@ -1168,7 +1168,6 @@
             // 
             // btnTandaiMasuk1
             // 
-            btnTandaiMasuk1.AutoSize = true;
             btnTandaiMasuk1.BackColor = Color.Black;
             btnTandaiMasuk1.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             btnTandaiMasuk1.ForeColor = Color.White;
@@ -1183,7 +1182,6 @@
             // 
             // btnTandaiMasuk2
             // 
-            btnTandaiMasuk2.AutoSize = true;
             btnTandaiMasuk2.BackColor = Color.Black;
             btnTandaiMasuk2.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             btnTandaiMasuk2.ForeColor = Color.White;
@@ -1198,7 +1196,6 @@
             // 
             // btnTandaiMasuk4
             // 
-            btnTandaiMasuk4.AutoSize = true;
             btnTandaiMasuk4.BackColor = Color.Black;
             btnTandaiMasuk4.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             btnTandaiMasuk4.ForeColor = Color.White;
@@ -1213,7 +1210,6 @@
             // 
             // btnTandaiMasuk3
             // 
-            btnTandaiMasuk3.AutoSize = true;
             btnTandaiMasuk3.BackColor = Color.Black;
             btnTandaiMasuk3.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             btnTandaiMasuk3.ForeColor = Color.White;
