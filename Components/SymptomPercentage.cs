@@ -27,13 +27,6 @@ namespace ProjectPBO.Components
             set { lbPercentage.Text = value; }
         }
 
-        [Category("Custom Props")]
-        public Image? Image
-        {
-            get { return pbSymptom.BackgroundImage; }
-            set { pbSymptom.BackgroundImage = value; }
-        }
-
         public SymptomPercentage()
         {
             InitializeComponent();

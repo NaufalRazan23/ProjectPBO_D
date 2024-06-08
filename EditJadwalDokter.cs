@@ -1,4 +1,5 @@
-﻿using ProjectPBO.Data;
+﻿using ProjectPBO.controllers;
+using ProjectPBO.models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,48 +14,25 @@ namespace ProjectPBO
 {
     public partial class EditJadwalDokter : Form
     {
-
-        private List<DoktorSpesialis> doktorSpesialis = new List<DoktorSpesialis>();
-        private List<DoktorSpesialis> doktorSpesialis2 = new List<DoktorSpesialis>();
-
+        private JadwalController jadwalController;
         public EditJadwalDokter()
         {
             InitializeComponent();
-            doktorSpesialis.Add(new DoktorSpesialis("Dr. Amanda", "Anak", "Senin", "09:00-12:00"));
-            doktorSpesialis.Add(new DoktorSpesialis("Dr. Brian", "Kandungan", "", "13:00-16:00"));
-            doktorSpesialis.Add(new DoktorSpesialis("", "", "", ""));
-            doktorSpesialis.Add(new DoktorSpesialis("", "", "", ""));
-            doktorSpesialis.Add(new DoktorSpesialis("Dr. Clara", "Gigi dan Mulut", "Selasa", "08:00-11:00"));
-            doktorSpesialis.Add(new DoktorSpesialis("Dr. David", "Mata", "", "13:00-16:00"));
-            doktorSpesialis.Add(new DoktorSpesialis("", "", "", ""));
-            doktorSpesialis.Add(new DoktorSpesialis("", "", "", ""));
-            doktorSpesialis.Add(new DoktorSpesialis("Dr. Elena", "Psikiater", "Rabu", "10:00 - 13:00"));
-            doktorSpesialis.Add(new DoktorSpesialis("Dr. Farhan", "THT", "", "14:00 - 17:00"));
-            doktorSpesialis.Add(new DoktorSpesialis("", "", "", ""));
-            doktorSpesialis.Add(new DoktorSpesialis("", "", "", ""));
-            doktorSpesialis.Add(new DoktorSpesialis("Dr. Grace", "Kulit dan Kelamin", "Kamis", "08:30 - 11:30"));
-            doktorSpesialis.Add(new DoktorSpesialis("Dr. Henry", "Jantung", "", "13:30 - 16:30"));
-            doktorSpesialis.Add(new DoktorSpesialis("", "", "", ""));
-            doktorSpesialis.Add(new DoktorSpesialis("", "", "", ""));
+            jadwalController = new JadwalController();
+            refresh();
+        }
 
-            doktorSpesialis2.Add(new DoktorSpesialis("Dr. Ingrid", "Mata", "Jumat", "09:00 - 12:00"));
-            doktorSpesialis2.Add(new DoktorSpesialis("Dr. Jack", "Anak", "", "14:00 - 17:00"));
-            doktorSpesialis2.Add(new DoktorSpesialis("", "", "", ""));
-            doktorSpesialis2.Add(new DoktorSpesialis("", "", "", ""));
-
-            doktorSpesialis2.Add(new DoktorSpesialis("Dr. Kelly", "THT", "Sabtu", "08:30 - 11:30"));
-            doktorSpesialis2.Add(new DoktorSpesialis("Dr. Ratio", "Kandungan", "", "13:30 - 16:30"));
-            doktorSpesialis2.Add(new DoktorSpesialis("", "", "", ""));
-            doktorSpesialis2.Add(new DoktorSpesialis("", "", "", ""));
-
-
-            doktorSpesialis2.Add(new DoktorSpesialis("", "", "Minggu", ""));
-            doktorSpesialis2.Add(new DoktorSpesialis("", "", "", ""));
-            doktorSpesialis2.Add(new DoktorSpesialis("", "", "", ""));
-            doktorSpesialis2.Add(new DoktorSpesialis("", "", "", ""));
-
-            BarKiri.DataSource = doktorSpesialis;
-            BarKanan.DataSource = doktorSpesialis2;
+        private void refresh()
+        {
+            jadwalController.listJadwal = jadwalController.getListJadwal();
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            this.CHari.DataPropertyName = "hari";
+            this.CMulai.DataPropertyName = "jamMulai";
+            this.CSelesai.DataPropertyName = "jamSelesai";
+            this.CDokter.DataPropertyName = "DisplayNama";
+            this.CJenis.DataPropertyName = "DisplayJenis";
+            this.dataGridView1.DataSource = jadwalController.listJadwal;
         }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
@@ -95,6 +73,68 @@ namespace ProjectPBO
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnHapus_Click(object sender, EventArgs e)
+        {
+            var selectedRows = dataGridView1.SelectedRows;
+            if (selectedRows.Count == 0) { return; }
+            var selected = (Jadwal)selectedRows[0].DataBoundItem;
+            var id = selected.idJadwal;
+
+            MINIHapusJadwal mINIHapusJadwal = new MINIHapusJadwal();
+            DialogResult dialogResult = mINIHapusJadwal.ShowDialog();
+            if (DialogResult.OK == dialogResult)
+            {
+                jadwalController.hapus(id);
+                refresh();
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            var selectedRows = dataGridView1.SelectedRows;
+            if (selectedRows.Count == 0) { return; }
+            var selected = (Jadwal)selectedRows[0].DataBoundItem;
+            var id = selected.idJadwal;
+            var idDokter = selected.dokter.idDokter;
+            var hari = selected.hari;
+            var mulai = selected.jamMulai;
+            var selesai = selected.jamSelesai;
+
+            MINIEditJadwalPop mINIEditJadwalPop = new MINIEditJadwalPop();
+            List<Dokter> listDokter = jadwalController.getListDokter();
+            int indexDokterSebelumnya = listDokter.FindIndex((dokter) => dokter.idDokter == idDokter);
+            int indexHariSebelumnya = JadwalController.HariKeInteger(hari);
+            TimeOnly mulaiSebelumnya = mulai;
+            TimeOnly selesaiSebelumnya = selesai;
+
+            mINIEditJadwalPop.idJadwal = id;
+            mINIEditJadwalPop.listDokter = listDokter;
+            mINIEditJadwalPop.indexDokterSebelumnya = indexDokterSebelumnya;
+            mINIEditJadwalPop.indexHariSebelumnya = indexHariSebelumnya;
+            mINIEditJadwalPop.mulaiSebelumnya = mulaiSebelumnya;
+            mINIEditJadwalPop.selesaiSebelumnya = selesaiSebelumnya;
+            DialogResult dialogResult = mINIEditJadwalPop.ShowDialog();
+            if (dialogResult == DialogResult.OK)
+            {
+                jadwalController.edit(mINIEditJadwalPop.jadwal);
+                refresh();
+            }
+        }
+
+        private void btnTambah_Click(object sender, EventArgs e)
+        {
+            MINITambahJadwal mINITambahJadwal = new MINITambahJadwal();
+            List<Dokter> listDokter = jadwalController.getListDokter();
+            mINITambahJadwal.listDokter = listDokter;
+            DialogResult = mINITambahJadwal.ShowDialog();
+            if (DialogResult == DialogResult.OK)
+            {
+                var jadwalBaru = mINITambahJadwal.jadwal;
+                jadwalController.tambah(jadwalBaru);
+                refresh();
+            }
         }
     }
 }

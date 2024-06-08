@@ -20,15 +20,14 @@ namespace ProjectPBO.models
         {
             daftarGejala.Add(gejala);
         }
-        /*
-        public List<Penyakit> getHasilPrediksi()
+
+        public List<(Penyakit, float)> getHasilPrediksi()
         {
-            var hasilPrediksi = new List<Penyakit>();
-            foreach (var gejala in daftarGejala) 
-            {
-                if (gejala.nama.)
-            }
+            var hasilPrediksi = new List<(Penyakit, float)>();
+            // Belum jadi
+            hasilPrediksi.Add((daftarPenyakit[0], 0.98F));
+            hasilPrediksi.Add((daftarPenyakit[1], 0.451F));
+            return hasilPrediksi;
         }
-        */
     }
 }

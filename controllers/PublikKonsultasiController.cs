@@ -34,6 +34,8 @@ namespace ProjectPBO
                 int id = reader.GetInt32(0);
                 string nama = reader.GetString(1);
                 Penyakit penyakit = new Penyakit(id, nama);
+                penyakit.listGejala = getGejalaFromPenyakit(penyakit);
+                penyakit.listObat = getObatFromPenyakit(penyakit);
                 listPenyakit.Add(penyakit);
             }
             koneksi.Close();
@@ -47,7 +49,7 @@ namespace ProjectPBO
             NpgsqlConnection koneksi = KoneksiDatabase.BuatKoneksi();
             koneksi.Open();
             NpgsqlCommand query = koneksi.CreateCommand();
-            query.CommandText = "SELECT * FROM gelaja";
+            query.CommandText = "SELECT * FROM gejala";
             NpgsqlDataReader reader = query.ExecuteReader();
             while (reader.Read())
             {
@@ -69,7 +71,7 @@ namespace ProjectPBO
             koneksi.Open();
             NpgsqlCommand query = koneksi.CreateCommand();
             query.CommandText = $@"select g.id_gejala, g.gejala from detail_penyakit dp
-            join gelaja g on g.id_gejala = dp.id_gejala
+            join gejala g on g.id_gejala = dp.id_gejala
             where id_penyakit = {idPenyakit}";
             NpgsqlDataReader reader = query.ExecuteReader();
             while (reader.Read())

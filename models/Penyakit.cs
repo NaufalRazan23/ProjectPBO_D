@@ -10,6 +10,8 @@ namespace ProjectPBO.models
     {
         public int idPenyakit { get; set; }
         public string nama { get; set; }
+        public List<Gejala> listGejala;
+        public List<Obat> listObat;
 
         public Penyakit(int idPenyakit, string nama)
         {

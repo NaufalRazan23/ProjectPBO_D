@@ -12,9 +12,11 @@ namespace ProjectPBO
 {
     public partial class berhasilDibuat : Form
     {
-        public berhasilDibuat()
+        public berhasilDibuat(string nama, string nomorAntrian)
         {
             InitializeComponent();
+            label5.Text = nama;
+            label3.Text = nomorAntrian;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -35,6 +37,11 @@ namespace ProjectPBO
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
