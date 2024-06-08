@@ -46,14 +46,16 @@
             // 
             // guna2HtmlLabel1
             // 
+            guna2HtmlLabel1.Anchor = AnchorStyles.Top;
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Arial", 24F, FontStyle.Bold);
-            guna2HtmlLabel1.Location = new Point(453, 12);
-            guna2HtmlLabel1.Margin = new Padding(4, 3, 4, 3);
+            guna2HtmlLabel1.Location = new Point(317, 7);
+            guna2HtmlLabel1.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(545, 58);
+            guna2HtmlLabel1.Size = new Size(363, 39);
             guna2HtmlLabel1.TabIndex = 1;
             guna2HtmlLabel1.Text = "EDIT JADWAL DOKTER";
+            guna2HtmlLabel1.UseWaitCursor = true;
             // 
             // btnBack
             // 
@@ -66,59 +68,70 @@
             btnBack.Font = new Font("Segoe UI", 9F);
             btnBack.ForeColor = Color.White;
             btnBack.Image = Properties.Resources.backbutton;
-            btnBack.Location = new Point(14, 15);
-            btnBack.Margin = new Padding(4, 3, 4, 3);
+            btnBack.Location = new Point(10, 9);
+            btnBack.Margin = new Padding(3, 2, 3, 2);
             btnBack.Name = "btnBack";
             btnBack.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnBack.Size = new Size(69, 52);
+            btnBack.Size = new Size(48, 31);
             btnBack.TabIndex = 7;
+            btnBack.UseWaitCursor = true;
             btnBack.Click += btnBack_Click;
             // 
             // btnEdit
             // 
+            btnEdit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnEdit.Font = new Font("Segoe UI", 12F);
-            btnEdit.Location = new Point(1219, 31);
+            btnEdit.Location = new Point(853, 19);
+            btnEdit.Margin = new Padding(2);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(51, 53);
+            btnEdit.Size = new Size(36, 32);
             btnEdit.TabIndex = 21;
             btnEdit.Text = "🖉";
             btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.UseWaitCursor = true;
             btnEdit.Click += btnEdit_Click;
             // 
             // btnHapus
             // 
+            btnHapus.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnHapus.Font = new Font("Segoe UI", 12F);
-            btnHapus.Location = new Point(1162, 31);
+            btnHapus.Location = new Point(813, 19);
+            btnHapus.Margin = new Padding(2);
             btnHapus.Name = "btnHapus";
-            btnHapus.Size = new Size(51, 53);
+            btnHapus.Size = new Size(36, 32);
             btnHapus.TabIndex = 22;
             btnHapus.Text = "🗑";
             btnHapus.UseVisualStyleBackColor = true;
+            btnHapus.UseWaitCursor = true;
             btnHapus.Click += btnHapus_Click;
             // 
             // btnTambah
             // 
+            btnTambah.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnTambah.Font = new Font("Segoe UI", 12F);
-            btnTambah.Location = new Point(1276, 31);
+            btnTambah.Location = new Point(893, 19);
+            btnTambah.Margin = new Padding(2);
             btnTambah.Name = "btnTambah";
-            btnTambah.Size = new Size(51, 53);
+            btnTambah.Size = new Size(36, 32);
             btnTambah.TabIndex = 23;
             btnTambah.Text = "+";
             btnTambah.UseVisualStyleBackColor = true;
+            btnTambah.UseWaitCursor = true;
             btnTambah.Click += btnTambah_Click;
             // 
             // dataGridView1
             // 
             dataGridView1.AccessibleName = "IniDataKanan";
+            dataGridView1.Anchor = AnchorStyles.None;
             dataGridView1.BackgroundColor = SystemColors.ButtonFace;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { CHari, CMulai, CSelesai, CDokter, CJenis });
-            dataGridView1.Location = new Point(155, 107);
-            dataGridView1.Margin = new Padding(4, 5, 4, 5);
+            dataGridView1.Location = new Point(108, 64);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(1014, 655);
+            dataGridView1.Size = new Size(710, 393);
             dataGridView1.TabIndex = 24;
+            dataGridView1.UseWaitCursor = true;
             // 
             // CHari
             // 
@@ -157,18 +170,21 @@
             // 
             // EditJadwalDokter
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1339, 788);
+            ClientSize = new Size(937, 473);
             Controls.Add(dataGridView1);
             Controls.Add(btnTambah);
             Controls.Add(btnHapus);
             Controls.Add(btnEdit);
             Controls.Add(btnBack);
             Controls.Add(guna2HtmlLabel1);
-            Margin = new Padding(4, 3, 4, 3);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "EditJadwalDokter";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "EditJadwalDoktor";
+            UseWaitCursor = true;
+            WindowState = FormWindowState.Maximized;
             Load += EditJadwalDokter_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
