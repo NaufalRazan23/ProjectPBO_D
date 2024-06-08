@@ -36,23 +36,25 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 40F);
-            label1.Location = new Point(192, 44);
+            label1.Location = new Point(295, 59);
             label1.Name = "label1";
-            label1.Size = new Size(513, 72);
+            label1.Size = new Size(640, 89);
             label1.TabIndex = 0;
             label1.Text = "HOME PAGE ADMIN";
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.None;
+            button1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             button1.BackColor = SystemColors.ActiveCaptionText;
             button1.Font = new Font("Segoe UI", 40F);
-            button1.ForeColor = SystemColors.ButtonFace;
-            button1.Location = new Point(52, 154);
-            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.ForeColor = Color.Ivory;
+            button1.Location = new Point(135, 302);
             button1.Name = "button1";
-            button1.Size = new Size(363, 247);
+            button1.Size = new Size(415, 329);
             button1.TabIndex = 3;
             button1.Text = "ATUR ANTRIAN";
             button1.UseVisualStyleBackColor = false;
@@ -60,13 +62,13 @@
             // 
             // button2
             // 
+            button2.Anchor = AnchorStyles.None;
             button2.BackColor = SystemColors.ActiveCaptionText;
             button2.Font = new Font("Segoe UI", 40F);
             button2.ForeColor = SystemColors.ButtonFace;
-            button2.Location = new Point(524, 154);
-            button2.Margin = new Padding(3, 2, 3, 2);
+            button2.Location = new Point(675, 302);
             button2.Name = "button2";
-            button2.Size = new Size(363, 247);
+            button2.Size = new Size(415, 329);
             button2.TabIndex = 4;
             button2.Text = "EDIT JADWAL";
             button2.UseVisualStyleBackColor = false;
@@ -76,25 +78,26 @@
             // 
             label_back.AutoSize = true;
             label_back.Font = new Font("Segoe UI", 40F);
-            label_back.Location = new Point(12, 9);
+            label_back.Location = new Point(14, 12);
             label_back.Name = "label_back";
-            label_back.Size = new Size(67, 72);
+            label_back.Size = new Size(84, 89);
             label_back.TabIndex = 5;
             label_back.Text = "<";
             label_back.Click += label2_Click;
             // 
             // Home_Page_Admin
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(959, 449);
+            ClientSize = new Size(1249, 793);
             Controls.Add(label_back);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Home_Page_Admin";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Admin";
+            WindowState = FormWindowState.Maximized;
             Load += Form2_Load;
             ResumeLayout(false);
             PerformLayout();

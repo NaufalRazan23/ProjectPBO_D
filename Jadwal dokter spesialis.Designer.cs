@@ -32,23 +32,24 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             dataGridView1 = new DataGridView();
-            btnBack = new Guna.UI2.WinForms.Guna2Button();
             CHari = new DataGridViewTextBoxColumn();
             CMulai = new DataGridViewTextBoxColumn();
             CSelesai = new DataGridViewTextBoxColumn();
             CDokter = new DataGridViewTextBoxColumn();
             CJenis = new DataGridViewTextBoxColumn();
+            btnBack = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
+            label1.AllowDrop = true;
+            label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 39.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(474, 47);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(379, 38);
             label1.Name = "label1";
-            label1.Size = new Size(676, 106);
+            label1.Size = new Size(569, 89);
             label1.TabIndex = 8;
             label1.Text = "JADWAL DOKTER";
             label1.Click += label1_Click;
@@ -56,35 +57,18 @@
             // dataGridView1
             // 
             dataGridView1.AccessibleName = "IniDataKanan";
+            dataGridView1.AllowDrop = true;
+            dataGridView1.Anchor = AnchorStyles.Top;
             dataGridView1.BackgroundColor = SystemColors.ButtonFace;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { CHari, CMulai, CSelesai, CDokter, CJenis });
-            dataGridView1.Location = new Point(286, 227);
-            dataGridView1.Margin = new Padding(4, 5, 4, 5);
+            dataGridView1.Location = new Point(229, 182);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(1014, 655);
+            dataGridView1.Size = new Size(811, 524);
             dataGridView1.TabIndex = 9;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // btnBack
-            // 
-            btnBack.CustomizableEdges = customizableEdges1;
-            btnBack.DisabledState.BorderColor = Color.DarkGray;
-            btnBack.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnBack.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnBack.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnBack.FillColor = Color.Empty;
-            btnBack.Font = new Font("Segoe UI", 9F);
-            btnBack.ForeColor = Color.White;
-            btnBack.Image = Properties.Resources.backbutton;
-            btnBack.Location = new Point(17, 47);
-            btnBack.Margin = new Padding(4, 3, 4, 3);
-            btnBack.Name = "btnBack";
-            btnBack.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnBack.Size = new Size(69, 52);
-            btnBack.TabIndex = 11;
-            btnBack.Click += btnBack_Click;
             // 
             // CHari
             // 
@@ -121,17 +105,37 @@
             CJenis.Name = "CJenis";
             CJenis.Width = 300;
             // 
+            // btnBack
+            // 
+            btnBack.CustomizableEdges = customizableEdges1;
+            btnBack.DisabledState.BorderColor = Color.DarkGray;
+            btnBack.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnBack.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnBack.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnBack.FillColor = Color.Empty;
+            btnBack.Font = new Font("Segoe UI", 9F);
+            btnBack.ForeColor = Color.White;
+            btnBack.Image = Properties.Resources.backbutton;
+            btnBack.Location = new Point(14, 38);
+            btnBack.Margin = new Padding(3, 2, 3, 2);
+            btnBack.Name = "btnBack";
+            btnBack.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnBack.Size = new Size(55, 42);
+            btnBack.TabIndex = 11;
+            btnBack.Click += btnBack_Click;
+            // 
             // Jadwal_dokter_spesialis
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1539, 927);
+            ClientSize = new Size(1249, 793);
             Controls.Add(btnBack);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
-            Margin = new Padding(4, 5, 4, 5);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Jadwal_dokter_spesialis";
             Text = "Jadwal_dokter_spesialis";
+            WindowState = FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

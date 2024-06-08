@@ -65,5 +65,19 @@ namespace ProjectPBO
             rekomendasiObatForm.FormClosed += (s, args) => this.Close();
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void KonsultasiForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
