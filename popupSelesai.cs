@@ -12,9 +12,12 @@ namespace ProjectPBO
 {
     public partial class popupSelesai : Form
     {
-        public popupSelesai()
+        public popupSelesai(string sebelumnya, string nomor, string nama)
         {
             InitializeComponent();
+            label2.Text = $"PASIEN {sebelumnya} TELAH SELESAI";
+            label6.Text = nomor;
+            label8.Text = nama;
         }
 
         private void label1_Click(object sender, EventArgs e)
