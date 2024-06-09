@@ -71,7 +71,7 @@ namespace ProjectPBO
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1824, 75);
+            panel1.Size = new Size(1254, 75);
             panel1.TabIndex = 0;
             // 
             // label4
@@ -79,7 +79,7 @@ namespace ProjectPBO
             label4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            label4.Location = new Point(1567, 24);
+            label4.Location = new Point(997, 24);
             label4.Name = "label4";
             label4.Size = new Size(98, 37);
             label4.TabIndex = 1;
@@ -92,7 +92,7 @@ namespace ProjectPBO
             label2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            label2.Location = new Point(1708, 24);
+            label2.Location = new Point(1138, 24);
             label2.Name = "label2";
             label2.Size = new Size(102, 37);
             label2.TabIndex = 1;
@@ -137,9 +137,9 @@ namespace ProjectPBO
             label6.Dock = DockStyle.Bottom;
             label6.Font = new Font("Bahnschrift Condensed", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = SystemColors.ButtonShadow;
-            label6.Location = new Point(0, 870);
+            label6.Location = new Point(0, 703);
             label6.Name = "label6";
-            label6.Size = new Size(1824, 26);
+            label6.Size = new Size(1254, 26);
             label6.TabIndex = 1;
             label6.Text = "Alamat Jln Jawa4 Kab Jember";
             label6.TextAlign = ContentAlignment.BottomLeft;
@@ -149,7 +149,7 @@ namespace ProjectPBO
             label7.Anchor = AnchorStyles.Bottom;
             label7.Font = new Font("Bahnschrift Condensed", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.ForeColor = SystemColors.ButtonShadow;
-            label7.Location = new Point(873, 880);
+            label7.Location = new Point(588, 713);
             label7.Name = "label7";
             label7.Size = new Size(85, 16);
             label7.TabIndex = 1;
@@ -162,7 +162,7 @@ namespace ProjectPBO
             label8.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label8.Font = new Font("Bahnschrift Condensed", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label8.ForeColor = SystemColors.ButtonShadow;
-            label8.Location = new Point(1659, 869);
+            label8.Location = new Point(1089, 702);
             label8.Name = "label8";
             label8.Size = new Size(164, 26);
             label8.TabIndex = 1;
@@ -176,7 +176,7 @@ namespace ProjectPBO
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = SystemColors.Control;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1824, 896);
+            ClientSize = new Size(1254, 729);
             Controls.Add(panel1);
             Controls.Add(label8);
             Controls.Add(label7);
@@ -186,7 +186,7 @@ namespace ProjectPBO
             Name = "Form1";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Form1";
-            WindowState = FormWindowState.Maximized;
+            WindowState = FormWindowState.Minimized;
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
