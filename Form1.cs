@@ -10,6 +10,7 @@ namespace ProjectPBO
         private void label1_Click(object sender, EventArgs e)
         {
             Home_Page_User _HopePageUser = new Home_Page_User();
+            _HopePageUser.FormClosed += (s, args) => this.Close();
             _HopePageUser.Show();
             this.Hide();
         }
