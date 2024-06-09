@@ -85,7 +85,6 @@ namespace ProjectPBO
             label4.TabIndex = 1;
             label4.Text = "Publik";
             label4.TextAlign = ContentAlignment.TopRight;
-            label4.UseWaitCursor = true;
             label4.Click += label1_Click;
             // 
             // label2

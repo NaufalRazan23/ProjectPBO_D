@@ -83,7 +83,6 @@
             button1.TabIndex = 6;
             button1.Text = "LIHAT ANTRIAN";
             button1.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
-            button1.UseWaitCursor = true;
             button1.Click += button1_Click_1;
             // 
             // button2
@@ -105,7 +104,6 @@
             button2.TabIndex = 7;
             button2.Text = "EDIT JADWAL DOKTER";
             button2.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
-            button2.UseWaitCursor = true;
             button2.Click += button2_Click;
             // 
             // Home_Page_Admin

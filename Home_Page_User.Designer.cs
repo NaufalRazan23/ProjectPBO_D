@@ -58,7 +58,6 @@
             btnBuatAntrian.TabIndex = 3;
             btnBuatAntrian.Text = "BUAT ANTRIAN";
             btnBuatAntrian.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
-            btnBuatAntrian.UseWaitCursor = true;
             btnBuatAntrian.Click += guna2Button1_Click;
             // 
             // labelHomePage
@@ -75,7 +74,6 @@
             labelHomePage.Text = "HOME PAGE USER ";
             labelHomePage.TextAlign = ContentAlignment.TopCenter;
             labelHomePage.UseCompatibleTextRendering = true;
-            labelHomePage.UseWaitCursor = true;
             labelHomePage.Click += label1_Click;
             // 
             // Btn
@@ -97,7 +95,6 @@
             Btn.TabIndex = 4;
             Btn.Text = "KONSULTASI KESEHATAN";
             Btn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
-            Btn.UseWaitCursor = true;
             Btn.Click += guna2Button1_Click_1;
             // 
             // Home_Page_User
@@ -116,7 +113,6 @@
             StartPosition = FormStartPosition.CenterParent;
             Text = "HomepageAntrianUser'";
             TopMost = true;
-            UseWaitCursor = true;
             WindowState = FormWindowState.Maximized;
             Load += Home_Page_User_Load;
             ResumeLayout(false);

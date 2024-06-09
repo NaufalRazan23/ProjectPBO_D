@@ -89,7 +89,6 @@
             btnEdit.TabIndex = 21;
             btnEdit.Text = "🖉";
             btnEdit.UseVisualStyleBackColor = true;
-            btnEdit.UseWaitCursor = true;
             btnEdit.Click += btnEdit_Click;
             // 
             // btnHapus
@@ -103,7 +102,6 @@
             btnHapus.TabIndex = 22;
             btnHapus.Text = "🗑";
             btnHapus.UseVisualStyleBackColor = true;
-            btnHapus.UseWaitCursor = true;
             btnHapus.Click += btnHapus_Click;
             // 
             // btnTambah
@@ -117,7 +115,6 @@
             btnTambah.TabIndex = 23;
             btnTambah.Text = "+";
             btnTambah.UseVisualStyleBackColor = true;
-            btnTambah.UseWaitCursor = true;
             btnTambah.Click += btnTambah_Click;
             // 
             // dataGridView1
