@@ -113,7 +113,6 @@
             StartPosition = FormStartPosition.CenterParent;
             Text = "HomepageAntrianUser'";
             TopMost = true;
-            WindowState = FormWindowState.Minimized;
             Load += Home_Page_User_Load;
             ResumeLayout(false);
             PerformLayout();
