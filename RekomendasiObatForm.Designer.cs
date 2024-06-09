@@ -30,6 +30,7 @@
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RekomendasiObatForm));
             label1 = new Label();
             panel1 = new Panel();
             label2 = new Label();
@@ -51,6 +52,7 @@
             // 
             label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Arial Narrow", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(286, 33);
             label1.Name = "label1";
@@ -63,12 +65,12 @@
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panel1.BackColor = SystemColors.ActiveBorder;
+            panel1.BackColor = SystemColors.Control;
             panel1.Controls.Add(label2);
-            panel1.Location = new Point(1, 502);
+            panel1.Location = new Point(1, 535);
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1097, 94);
+            panel1.Size = new Size(1097, 61);
             panel1.TabIndex = 3;
             panel1.UseWaitCursor = true;
             // 
@@ -77,7 +79,7 @@
             label2.Anchor = AnchorStyles.Bottom;
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(190, 41);
+            label2.Location = new Point(208, 20);
             label2.Name = "label2";
             label2.Size = new Size(651, 18);
             label2.TabIndex = 0;
@@ -95,7 +97,7 @@
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(label3);
-            panel2.Location = new Point(332, 281);
+            panel2.Location = new Point(304, 281);
             panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
             panel2.Size = new Size(440, 163);
@@ -157,6 +159,7 @@
             // 
             // btnBack
             // 
+            btnBack.BackColor = Color.Transparent;
             btnBack.CustomizableEdges = customizableEdges1;
             btnBack.DisabledState.BorderColor = Color.DarkGray;
             btnBack.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -177,7 +180,7 @@
             // 
             // lbSymptom
             // 
-            lbSymptom.Anchor = AnchorStyles.Left;
+            lbSymptom.Anchor = AnchorStyles.None;
             lbSymptom.BackColor = Color.Black;
             lbSymptom.Font = new Font("Arial", 14F);
             lbSymptom.ForeColor = SystemColors.ControlLightLight;
@@ -192,7 +195,7 @@
             // 
             // lbPercentage
             // 
-            lbPercentage.Anchor = AnchorStyles.Left;
+            lbPercentage.Anchor = AnchorStyles.None;
             lbPercentage.BackColor = Color.Black;
             lbPercentage.Font = new Font("Arial", 16F);
             lbPercentage.ForeColor = SystemColors.ControlLightLight;
@@ -208,11 +211,11 @@
             // 
             // label6
             // 
-            label6.Anchor = AnchorStyles.Right;
+            label6.Anchor = AnchorStyles.None;
             label6.BackColor = Color.Black;
             label6.Font = new Font("Arial", 14F);
             label6.ForeColor = SystemColors.ControlLightLight;
-            label6.Location = new Point(655, 130);
+            label6.Location = new Point(655, 132);
             label6.Name = "label6";
             label6.Padding = new Padding(9, 0, 9, 0);
             label6.Size = new Size(284, 75);
@@ -223,11 +226,11 @@
             // 
             // label7
             // 
-            label7.Anchor = AnchorStyles.Right;
+            label7.Anchor = AnchorStyles.None;
             label7.BackColor = Color.Black;
             label7.Font = new Font("Arial", 16F);
             label7.ForeColor = SystemColors.ControlLightLight;
-            label7.Location = new Point(942, 130);
+            label7.Location = new Point(942, 132);
             label7.Margin = new Padding(0);
             label7.Name = "label7";
             label7.Padding = new Padding(0, 0, 4, 0);
@@ -241,6 +244,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1093, 595);
             Controls.Add(label6);
             Controls.Add(label7);

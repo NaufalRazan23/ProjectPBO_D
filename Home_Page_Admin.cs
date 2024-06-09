@@ -22,7 +22,21 @@ namespace ProjectPBO
 
         }
         private Home_Page_Admin Home_Page_AdminInstance;
-        private void button1_Click(object sender, EventArgs e)
+
+        private void button2_2_Click(object sender, EventArgs e)
+        {
+            EditJadwalDokter editJadwalDokter = new EditJadwalDokter();
+            editJadwalDokter.FormClosed += (s, args) => this.Show();
+            editJadwalDokter.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
             if (Home_Page_AdminInstance == null || Home_Page_AdminInstance.IsDisposed)
             {
@@ -42,11 +56,6 @@ namespace ProjectPBO
             editJadwalDokter.FormClosed += (s, args) => this.Show();
             editJadwalDokter.Show();
             this.Hide();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

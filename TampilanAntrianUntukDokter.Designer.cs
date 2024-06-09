@@ -30,6 +30,7 @@
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TampilanAntrianUntukDokter));
             panel2 = new Panel();
             lblKeterangan = new Label();
             panel3 = new Panel();
@@ -128,6 +129,7 @@
             // 
             label19.Anchor = AnchorStyles.None;
             label19.AutoSize = true;
+            label19.BackColor = Color.Transparent;
             label19.Font = new Font("Segoe UI Semibold", 20F, FontStyle.Bold);
             label19.Location = new Point(248, 5);
             label19.Name = "label19";
@@ -139,6 +141,7 @@
             // 
             lblNomorAntrian.Anchor = AnchorStyles.None;
             lblNomorAntrian.AutoSize = true;
+            lblNomorAntrian.BackColor = Color.Transparent;
             lblNomorAntrian.Font = new Font("Segoe UI", 30F, FontStyle.Bold);
             lblNomorAntrian.Location = new Point(293, 50);
             lblNomorAntrian.Margin = new Padding(2, 0, 2, 0);
@@ -153,6 +156,7 @@
             BtnNxtDoc.AccessibleName = "labelquitnj";
             BtnNxtDoc.Anchor = AnchorStyles.Right;
             BtnNxtDoc.AutoSize = true;
+            BtnNxtDoc.BackColor = Color.Transparent;
             BtnNxtDoc.Font = new Font("Segoe UI", 40F);
             BtnNxtDoc.Location = new Point(802, 141);
             BtnNxtDoc.Name = "BtnNxtDoc";
@@ -167,6 +171,7 @@
             BtnPrevdkt.AccessibleName = "labelquitnj";
             BtnPrevdkt.Anchor = AnchorStyles.Left;
             BtnPrevdkt.AutoSize = true;
+            BtnPrevdkt.BackColor = Color.Transparent;
             BtnPrevdkt.Font = new Font("Segoe UI", 40F);
             BtnPrevdkt.Location = new Point(12, 141);
             BtnPrevdkt.Name = "BtnPrevdkt";
@@ -199,6 +204,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(881, 398);
             Controls.Add(btnTandaiSelesai);
             Controls.Add(BtnPrevdkt);

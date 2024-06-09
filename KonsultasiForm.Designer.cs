@@ -38,6 +38,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KonsultasiForm));
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             cbKeluhan1 = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -53,11 +54,11 @@
             // 
             guna2HtmlLabel1.Anchor = AnchorStyles.Top;
             guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Font = new Font("Arial Black", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2HtmlLabel1.Location = new Point(399, 74);
+            guna2HtmlLabel1.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
+            guna2HtmlLabel1.Location = new Point(424, 74);
             guna2HtmlLabel1.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(238, 47);
+            guna2HtmlLabel1.Size = new Size(200, 47);
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "KONSULTASI";
             guna2HtmlLabel1.TextAlignment = ContentAlignment.TopCenter;
@@ -143,7 +144,7 @@
             // panel1
             // 
             panel1.AllowDrop = true;
-            panel1.BackColor = SystemColors.ActiveBorder;
+            panel1.BackColor = SystemColors.Control;
             panel1.Controls.Add(btnBack);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -205,6 +206,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1093, 595);
             Controls.Add(cbKeluhan3);
             Controls.Add(cbKeluhan2);

@@ -30,6 +30,7 @@
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditJadwalDokter));
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             btnBack = new Guna.UI2.WinForms.Guna2Button();
             btnEdit = new Button();
@@ -172,6 +173,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(937, 473);
             Controls.Add(dataGridView1);
             Controls.Add(btnTambah);
@@ -182,7 +184,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "EditJadwalDokter";
             StartPosition = FormStartPosition.CenterParent;
-            Text = "EditJadwalDoktor";
+            Text = "`";
             UseWaitCursor = true;
             WindowState = FormWindowState.Maximized;
             Load += EditJadwalDokter_Load;

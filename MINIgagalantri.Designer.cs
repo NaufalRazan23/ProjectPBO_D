@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MINIgagalantri));
             label4 = new Label();
             button2 = new Button();
             SuspendLayout();
@@ -35,6 +36,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.Location = new Point(121, 134);
             label4.Name = "label4";
@@ -53,14 +55,15 @@
             button2.Text = "OK";
             button2.UseVisualStyleBackColor = true;
             // 
-            // gagalantri
+            // MINIgagalantri
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(558, 374);
             Controls.Add(label4);
             Controls.Add(button2);
-            Name = "gagalantri";
+            Name = "MINIgagalantri";
             Text = "gagalantri";
             ResumeLayout(false);
             PerformLayout();

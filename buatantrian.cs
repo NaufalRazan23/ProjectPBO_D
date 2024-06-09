@@ -104,5 +104,10 @@ namespace ProjectPBO
             jadwal_dokter_spesialis.Show();
             this.Hide();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

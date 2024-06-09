@@ -32,6 +32,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home_Page_User));
             btnBuatAntrian = new Guna.UI2.WinForms.Guna2Button();
             labelHomePage = new Label();
             Btn = new Guna.UI2.WinForms.Guna2Button();
@@ -48,12 +49,12 @@
             btnBuatAntrian.FillColor = Color.Black;
             btnBuatAntrian.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold);
             btnBuatAntrian.ForeColor = Color.White;
-            btnBuatAntrian.Location = new Point(111, 337);
-            btnBuatAntrian.Margin = new Padding(2, 3, 2, 3);
+            btnBuatAntrian.Location = new Point(450, 375);
+            btnBuatAntrian.Margin = new Padding(2);
             btnBuatAntrian.Name = "btnBuatAntrian";
             btnBuatAntrian.RightToLeft = RightToLeft.Yes;
             btnBuatAntrian.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnBuatAntrian.Size = new Size(377, 241);
+            btnBuatAntrian.Size = new Size(330, 181);
             btnBuatAntrian.TabIndex = 3;
             btnBuatAntrian.Text = "BUAT ANTRIAN";
             btnBuatAntrian.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
@@ -65,12 +66,13 @@
             labelHomePage.AllowDrop = true;
             labelHomePage.Anchor = AnchorStyles.Top;
             labelHomePage.AutoSize = true;
+            labelHomePage.BackColor = Color.Transparent;
             labelHomePage.Font = new Font("Microsoft YaHei", 40F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelHomePage.Location = new Point(411, 47);
+            labelHomePage.Location = new Point(413, 42);
             labelHomePage.Name = "labelHomePage";
-            labelHomePage.Size = new Size(454, 100);
+            labelHomePage.Size = new Size(542, 81);
             labelHomePage.TabIndex = 0;
-            labelHomePage.Text = "HOME PAGE";
+            labelHomePage.Text = "HOME PAGE USER ";
             labelHomePage.TextAlign = ContentAlignment.TopCenter;
             labelHomePage.UseCompatibleTextRendering = true;
             labelHomePage.UseWaitCursor = true;
@@ -78,7 +80,7 @@
             // 
             // Btn
             // 
-            Btn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            Btn.Anchor = AnchorStyles.Top;
             Btn.CustomizableEdges = customizableEdges3;
             Btn.DisabledState.BorderColor = Color.DarkGray;
             Btn.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -87,11 +89,11 @@
             Btn.FillColor = Color.Black;
             Btn.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Btn.ForeColor = Color.White;
-            Btn.Location = new Point(735, 337);
-            Btn.Margin = new Padding(2, 3, 2, 3);
+            Btn.Location = new Point(841, 375);
+            Btn.Margin = new Padding(2);
             Btn.Name = "Btn";
             Btn.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            Btn.Size = new Size(379, 241);
+            Btn.Size = new Size(332, 181);
             Btn.TabIndex = 4;
             Btn.Text = "KONSULTASI KESEHATAN";
             Btn.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
@@ -101,13 +103,15 @@
             // Home_Page_User
             // 
             AllowDrop = true;
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(1249, 793);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(1411, 695);
             Controls.Add(Btn);
             Controls.Add(btnBuatAntrian);
             Controls.Add(labelHomePage);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Home_Page_User";
             StartPosition = FormStartPosition.CenterParent;
             Text = "HomepageAntrianUser'";

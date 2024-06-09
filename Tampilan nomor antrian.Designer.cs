@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tampilan_nomor_antrian));
             guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
             panel47 = new Panel();
             lblJenisDokter9 = new Label();
@@ -111,7 +112,6 @@
             panel32 = new Panel();
             lblKeterangan6 = new Label();
             panel34 = new Panel();
-
             lblKeterangan9 = new Label();
             lblNomorAntrian2 = new Label();
             lblNomorAntrian3 = new Label();
@@ -220,6 +220,7 @@
             // 
             label25.Anchor = AnchorStyles.Bottom;
             label25.AutoSize = true;
+            label25.BackColor = Color.Transparent;
             label25.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             label25.Location = new Point(897, 271);
             label25.Name = "label25";
@@ -288,6 +289,7 @@
             // 
             label20.Anchor = AnchorStyles.Bottom;
             label20.AutoSize = true;
+            label20.BackColor = Color.Transparent;
             label20.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             label20.Location = new Point(686, 271);
             label20.Name = "label20";
@@ -358,6 +360,7 @@
             // 
             label15.Anchor = AnchorStyles.Bottom;
             label15.AutoSize = true;
+            label15.BackColor = Color.Transparent;
             label15.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             label15.Location = new Point(251, 271);
             label15.Name = "label15";
@@ -427,6 +430,7 @@
             // 
             label10.Anchor = AnchorStyles.Bottom;
             label10.AutoSize = true;
+            label10.BackColor = Color.Transparent;
             label10.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             label10.Location = new Point(43, 271);
             label10.Name = "label10";
@@ -497,6 +501,7 @@
             // 
             label1.Anchor = AnchorStyles.Bottom;
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             label1.Location = new Point(472, 271);
             label1.Name = "label1";
@@ -600,6 +605,7 @@
             // 
             label19.Anchor = AnchorStyles.Top;
             label19.AutoSize = true;
+            label19.BackColor = Color.Transparent;
             label19.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             label19.Location = new Point(804, 19);
             label19.Name = "label19";
@@ -691,6 +697,7 @@
             // 
             label28.Anchor = AnchorStyles.Top;
             label28.AutoSize = true;
+            label28.BackColor = Color.Transparent;
             label28.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             label28.Location = new Point(590, 19);
             label28.Name = "label28";
@@ -782,6 +789,7 @@
             // 
             label32.Anchor = AnchorStyles.Top;
             label32.AutoSize = true;
+            label32.BackColor = Color.Transparent;
             label32.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             label32.Location = new Point(159, 19);
             label32.Name = "label32";
@@ -874,6 +882,7 @@
             // 
             label40.Anchor = AnchorStyles.Top;
             label40.AutoSize = true;
+            label40.BackColor = Color.Transparent;
             label40.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             label40.Location = new Point(370, 22);
             label40.Name = "label40";
@@ -1000,6 +1009,7 @@
             // 
             lblNomorAntrian2.Anchor = AnchorStyles.Top;
             lblNomorAntrian2.AutoSize = true;
+            lblNomorAntrian2.BackColor = Color.Transparent;
             lblNomorAntrian2.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             lblNomorAntrian2.Location = new Point(354, 41);
             lblNomorAntrian2.Margin = new Padding(2, 0, 2, 0);
@@ -1013,6 +1023,7 @@
             // 
             lblNomorAntrian3.Anchor = AnchorStyles.Top;
             lblNomorAntrian3.AutoSize = true;
+            lblNomorAntrian3.BackColor = Color.Transparent;
             lblNomorAntrian3.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             lblNomorAntrian3.Location = new Point(572, 38);
             lblNomorAntrian3.Margin = new Padding(2, 0, 2, 0);
@@ -1026,6 +1037,7 @@
             // 
             lblNomorAntrian4.Anchor = AnchorStyles.Top;
             lblNomorAntrian4.AutoSize = true;
+            lblNomorAntrian4.BackColor = Color.Transparent;
             lblNomorAntrian4.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             lblNomorAntrian4.Location = new Point(788, 38);
             lblNomorAntrian4.Margin = new Padding(2, 0, 2, 0);
@@ -1039,6 +1051,7 @@
             // 
             lblNomorAntrian1.Anchor = AnchorStyles.Top;
             lblNomorAntrian1.AutoSize = true;
+            lblNomorAntrian1.BackColor = Color.Transparent;
             lblNomorAntrian1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             lblNomorAntrian1.Location = new Point(144, 38);
             lblNomorAntrian1.Margin = new Padding(2, 0, 2, 0);
@@ -1052,6 +1065,7 @@
             // 
             lblNomorAntrian5.Anchor = AnchorStyles.Bottom;
             lblNomorAntrian5.AutoSize = true;
+            lblNomorAntrian5.BackColor = Color.Transparent;
             lblNomorAntrian5.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             lblNomorAntrian5.Location = new Point(32, 289);
             lblNomorAntrian5.Margin = new Padding(2, 0, 2, 0);
@@ -1065,6 +1079,7 @@
             // 
             lblNomorAntrian6.Anchor = AnchorStyles.Bottom;
             lblNomorAntrian6.AutoSize = true;
+            lblNomorAntrian6.BackColor = Color.Transparent;
             lblNomorAntrian6.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             lblNomorAntrian6.Location = new Point(237, 289);
             lblNomorAntrian6.Margin = new Padding(2, 0, 2, 0);
@@ -1078,6 +1093,7 @@
             // 
             lblNomorAntrian7.Anchor = AnchorStyles.Bottom;
             lblNomorAntrian7.AutoSize = true;
+            lblNomorAntrian7.BackColor = Color.Transparent;
             lblNomorAntrian7.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             lblNomorAntrian7.Location = new Point(466, 289);
             lblNomorAntrian7.Margin = new Padding(2, 0, 2, 0);
@@ -1091,6 +1107,7 @@
             // 
             lblNomorAntrian8.Anchor = AnchorStyles.Bottom;
             lblNomorAntrian8.AutoSize = true;
+            lblNomorAntrian8.BackColor = Color.Transparent;
             lblNomorAntrian8.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             lblNomorAntrian8.Location = new Point(677, 289);
             lblNomorAntrian8.Margin = new Padding(2, 0, 2, 0);
@@ -1104,6 +1121,7 @@
             // 
             lblNomorAntrian9.Anchor = AnchorStyles.Bottom;
             lblNomorAntrian9.AutoSize = true;
+            lblNomorAntrian9.BackColor = Color.Transparent;
             lblNomorAntrian9.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             lblNomorAntrian9.Location = new Point(888, 289);
             lblNomorAntrian9.Margin = new Padding(2, 0, 2, 0);
@@ -1256,15 +1274,12 @@
             btnNext.UseVisualStyleBackColor = false;
             btnNext.Click += btnNext_Click;
             // 
-            // lblNxtDoc
-            // 
-            // 
             // Tampilan_nomor_antrian
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1093, 595);
-
             Controls.Add(btnNext);
             Controls.Add(btnTandaiMasuk9);
             Controls.Add(btnTandaiMasuk8);
@@ -1284,7 +1299,6 @@
             Controls.Add(lblNomorAntrian4);
             Controls.Add(lblNomorAntrian3);
             Controls.Add(lblNomorAntrian2);
-
             Controls.Add(panel34);
             Controls.Add(panel11);
             Controls.Add(panel13);

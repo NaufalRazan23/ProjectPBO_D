@@ -39,4 +39,3 @@ namespace ProjectPBO.models
             return hasilPrediksi;
         }
     }
-}
