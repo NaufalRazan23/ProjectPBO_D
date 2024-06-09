@@ -45,7 +45,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 39.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(637, 44);
+            label1.Location = new Point(377, 32);
             label1.Name = "label1";
             label1.Size = new Size(538, 71);
             label1.TabIndex = 0;
@@ -65,6 +65,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button1.BackColor = SystemColors.Control;
             button1.CustomizableEdges = customizableEdges1;
             button1.DisabledState.BorderColor = Color.DarkGray;
@@ -74,7 +75,7 @@
             button1.FillColor = Color.Black;
             button1.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(450, 375);
+            button1.Location = new Point(720, 351);
             button1.Margin = new Padding(2);
             button1.Name = "button1";
             button1.RightToLeft = RightToLeft.Yes;
@@ -87,7 +88,6 @@
             // 
             // button2
             // 
-            button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button2.CustomizableEdges = customizableEdges3;
             button2.DisabledState.BorderColor = Color.DarkGray;
             button2.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -96,7 +96,7 @@
             button2.FillColor = Color.Black;
             button2.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(1003, 375);
+            button2.Location = new Point(259, 351);
             button2.Margin = new Padding(2);
             button2.Name = "button2";
             button2.ShadowDecoration.CustomizableEdges = customizableEdges4;
@@ -111,7 +111,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1850, 935);
+            ClientSize = new Size(1254, 729);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label_back);
@@ -120,7 +120,7 @@
             Name = "Home_Page_Admin";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Admin";
-            WindowState = FormWindowState.Maximized;
+            WindowState = FormWindowState.Minimized;
             Load += Form2_Load;
             ResumeLayout(false);
             PerformLayout();
