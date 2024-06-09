@@ -54,7 +54,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Arial Narrow", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(286, 33);
+            label1.Location = new Point(367, 33);
             label1.Name = "label1";
             label1.Size = new Size(471, 31);
             label1.TabIndex = 2;
@@ -66,10 +66,10 @@
             panel1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = SystemColors.Control;
             panel1.Controls.Add(label2);
-            panel1.Location = new Point(1, 535);
+            panel1.Location = new Point(1, 669);
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1097, 61);
+            panel1.Size = new Size(1258, 61);
             panel1.TabIndex = 3;
             // 
             // label2
@@ -77,7 +77,7 @@
             label2.Anchor = AnchorStyles.Bottom;
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(208, 20);
+            label2.Location = new Point(289, 20);
             label2.Name = "label2";
             label2.Size = new Size(651, 18);
             label2.TabIndex = 0;
@@ -94,7 +94,7 @@
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(label3);
-            panel2.Location = new Point(304, 281);
+            panel2.Location = new Point(385, 415);
             panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
             panel2.Size = new Size(440, 163);
@@ -175,7 +175,7 @@
             lbSymptom.BackColor = Color.Black;
             lbSymptom.Font = new Font("Arial", 14F);
             lbSymptom.ForeColor = SystemColors.ControlLightLight;
-            lbSymptom.Location = new Point(148, 132);
+            lbSymptom.Location = new Point(229, 199);
             lbSymptom.Name = "lbSymptom";
             lbSymptom.Padding = new Padding(9, 0, 9, 0);
             lbSymptom.Size = new Size(284, 75);
@@ -189,7 +189,7 @@
             lbPercentage.BackColor = Color.Black;
             lbPercentage.Font = new Font("Arial", 16F);
             lbPercentage.ForeColor = SystemColors.ControlLightLight;
-            lbPercentage.Location = new Point(58, 132);
+            lbPercentage.Location = new Point(139, 199);
             lbPercentage.Margin = new Padding(0);
             lbPercentage.Name = "lbPercentage";
             lbPercentage.Padding = new Padding(0, 0, 4, 0);
@@ -204,7 +204,7 @@
             label6.BackColor = Color.Black;
             label6.Font = new Font("Arial", 14F);
             label6.ForeColor = SystemColors.ControlLightLight;
-            label6.Location = new Point(655, 132);
+            label6.Location = new Point(736, 199);
             label6.Name = "label6";
             label6.Padding = new Padding(9, 0, 9, 0);
             label6.Size = new Size(284, 75);
@@ -218,7 +218,7 @@
             label7.BackColor = Color.Black;
             label7.Font = new Font("Arial", 16F);
             label7.ForeColor = SystemColors.ControlLightLight;
-            label7.Location = new Point(942, 132);
+            label7.Location = new Point(1023, 199);
             label7.Margin = new Padding(0);
             label7.Name = "label7";
             label7.Padding = new Padding(0, 0, 4, 0);
@@ -232,7 +232,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1093, 595);
+            ClientSize = new Size(1254, 729);
             Controls.Add(label6);
             Controls.Add(label7);
             Controls.Add(lbSymptom);
@@ -245,7 +245,6 @@
             Name = "RekomendasiObatForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "RekomendasiObatForm";
-            WindowState = FormWindowState.Maximized;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);

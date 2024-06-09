@@ -48,7 +48,7 @@ namespace ProjectPBO
                 lblKeterangan.Text = $"Atas Nama: -\nStatus: -";
             }
         }
-     
+
 
 
         private void lblNxtDoc_Click(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace ProjectPBO
             }
         }
 
- 
+
 
         private void btnTandaiSelesai_Click(object sender, EventArgs e)
         {
@@ -73,13 +73,18 @@ namespace ProjectPBO
 
         private void BtnPrevdkt_Click(object sender, EventArgs e)
         {
-            if(indexLabelSekarang == 0)
+            if (indexLabelSekarang == 0)
             {
                 this.Close();
                 return;
             }
             indexLabelSekarang--;
             refreshAntrian();
+        }
+
+        private void lblNomorAntrian_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

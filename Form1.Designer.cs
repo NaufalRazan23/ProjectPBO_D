@@ -186,7 +186,6 @@ namespace ProjectPBO
             Name = "Form1";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Form1";
-            WindowState = FormWindowState.Minimized;
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

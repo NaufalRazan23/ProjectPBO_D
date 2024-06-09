@@ -53,7 +53,7 @@
             panel2.Anchor = AnchorStyles.None;
             panel2.BackColor = SystemColors.ButtonHighlight;
             panel2.Controls.Add(lblKeterangan);
-            panel2.Location = new Point(286, 198);
+            panel2.Location = new Point(473, 363);
             panel2.Name = "panel2";
             panel2.Size = new Size(302, 101);
             panel2.TabIndex = 178;
@@ -73,7 +73,7 @@
             panel3.Anchor = AnchorStyles.None;
             panel3.BackColor = SystemColors.ControlText;
             panel3.Controls.Add(lblJenisDokter);
-            panel3.Location = new Point(321, 135);
+            panel3.Location = new Point(508, 300);
             panel3.Name = "panel3";
             panel3.Size = new Size(228, 40);
             panel3.TabIndex = 177;
@@ -93,7 +93,7 @@
             // 
             panel4.Anchor = AnchorStyles.None;
             panel4.BackColor = SystemColors.ActiveCaptionText;
-            panel4.Location = new Point(535, 111);
+            panel4.Location = new Point(722, 276);
             panel4.Name = "panel4";
             panel4.Size = new Size(52, 10);
             panel4.TabIndex = 176;
@@ -102,7 +102,7 @@
             // 
             panel5.Anchor = AnchorStyles.None;
             panel5.BackColor = SystemColors.ActiveCaptionText;
-            panel5.Location = new Point(454, 111);
+            panel5.Location = new Point(644, 276);
             panel5.Name = "panel5";
             panel5.Size = new Size(52, 10);
             panel5.TabIndex = 175;
@@ -111,7 +111,7 @@
             // 
             panel6.Anchor = AnchorStyles.None;
             panel6.BackColor = SystemColors.ActiveCaptionText;
-            panel6.Location = new Point(369, 111);
+            panel6.Location = new Point(556, 276);
             panel6.Name = "panel6";
             panel6.Size = new Size(52, 10);
             panel6.TabIndex = 174;
@@ -120,7 +120,7 @@
             // 
             panel7.Anchor = AnchorStyles.None;
             panel7.BackColor = SystemColors.ActiveCaptionText;
-            panel7.Location = new Point(286, 111);
+            panel7.Location = new Point(473, 276);
             panel7.Name = "panel7";
             panel7.Size = new Size(52, 10);
             panel7.TabIndex = 173;
@@ -131,7 +131,7 @@
             label19.AutoSize = true;
             label19.BackColor = Color.Transparent;
             label19.Font = new Font("Segoe UI Semibold", 20F, FontStyle.Bold);
-            label19.Location = new Point(248, 5);
+            label19.Location = new Point(435, 170);
             label19.Name = "label19";
             label19.Size = new Size(360, 37);
             label19.TabIndex = 172;
@@ -143,13 +143,14 @@
             lblNomorAntrian.AutoSize = true;
             lblNomorAntrian.BackColor = Color.Transparent;
             lblNomorAntrian.Font = new Font("Segoe UI", 30F, FontStyle.Bold);
-            lblNomorAntrian.Location = new Point(293, 50);
+            lblNomorAntrian.Location = new Point(476, 219);
             lblNomorAntrian.Margin = new Padding(2, 0, 2, 0);
             lblNomorAntrian.Name = "lblNomorAntrian";
-            lblNomorAntrian.Size = new Size(285, 54);
+            lblNomorAntrian.Size = new Size(296, 54);
             lblNomorAntrian.TabIndex = 180;
-            lblNomorAntrian.Text = "A     0     0     1";
+            lblNomorAntrian.Text = "A     0      0     1";
             lblNomorAntrian.TextAlign = ContentAlignment.MiddleCenter;
+            lblNomorAntrian.Click += lblNomorAntrian_Click;
             // 
             // BtnNxtDoc
             // 
@@ -158,7 +159,7 @@
             BtnNxtDoc.AutoSize = true;
             BtnNxtDoc.BackColor = Color.Transparent;
             BtnNxtDoc.Font = new Font("Segoe UI", 40F);
-            BtnNxtDoc.Location = new Point(802, 141);
+            BtnNxtDoc.Location = new Point(1175, 306);
             BtnNxtDoc.Name = "BtnNxtDoc";
             BtnNxtDoc.RightToLeft = RightToLeft.Yes;
             BtnNxtDoc.Size = new Size(67, 72);
@@ -173,7 +174,7 @@
             BtnPrevdkt.AutoSize = true;
             BtnPrevdkt.BackColor = Color.Transparent;
             BtnPrevdkt.Font = new Font("Segoe UI", 40F);
-            BtnPrevdkt.Location = new Point(12, 141);
+            BtnPrevdkt.Location = new Point(12, 306);
             BtnPrevdkt.Name = "BtnPrevdkt";
             BtnPrevdkt.RightToLeft = RightToLeft.Yes;
             BtnPrevdkt.Size = new Size(67, 72);
@@ -192,7 +193,7 @@
             btnTandaiSelesai.FillColor = Color.Black;
             btnTandaiSelesai.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
             btnTandaiSelesai.ForeColor = Color.White;
-            btnTandaiSelesai.Location = new Point(283, 304);
+            btnTandaiSelesai.Location = new Point(470, 469);
             btnTandaiSelesai.Name = "btnTandaiSelesai";
             btnTandaiSelesai.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnTandaiSelesai.Size = new Size(307, 81);
@@ -205,7 +206,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(881, 398);
+            ClientSize = new Size(1254, 729);
             Controls.Add(btnTandaiSelesai);
             Controls.Add(BtnPrevdkt);
             Controls.Add(BtnNxtDoc);
@@ -220,7 +221,6 @@
             Margin = new Padding(2);
             Name = "TampilanAntrianUntukDokter";
             Text = "TampilanAntrianUntukDokter";
-            WindowState = FormWindowState.Maximized;
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel3.ResumeLayout(false);

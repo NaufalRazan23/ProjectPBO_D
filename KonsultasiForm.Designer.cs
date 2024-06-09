@@ -55,7 +55,7 @@
             guna2HtmlLabel1.Anchor = AnchorStyles.Top;
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
-            guna2HtmlLabel1.Location = new Point(424, 74);
+            guna2HtmlLabel1.Location = new Point(505, 74);
             guna2HtmlLabel1.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(200, 47);
@@ -69,10 +69,10 @@
             guna2HtmlLabel2.AutoSize = false;
             guna2HtmlLabel2.BackColor = Color.Transparent;
             guna2HtmlLabel2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel2.Location = new Point(344, 125);
+            guna2HtmlLabel2.Location = new Point(425, 125);
             guna2HtmlLabel2.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(382, 138);
+            guna2HtmlLabel2.Size = new Size(382, 272);
             guna2HtmlLabel2.TabIndex = 1;
             guna2HtmlLabel2.Text = "SILAHKAN MASUKKAN KELUHAN YANG ANDA ALAMI, \r\nKAMI AKAN MENDIAGNOSA PENYAKIT DAN OBAT YANG BISA MEMBANTU MENGURANGI GEJALA TERSEBUT";
             guna2HtmlLabel2.TextAlignment = ContentAlignment.MiddleCenter;
@@ -93,7 +93,7 @@
             cbKeluhan1.ForeColor = Color.FromArgb(68, 88, 112);
             cbKeluhan1.ItemHeight = 30;
             cbKeluhan1.Items.AddRange(new object[] { "KELUHAN 1", "PUSING", "MERIANG", "PANAS", "BIBIR PECAH PECAH", "TENGOROKAN SAKIT" });
-            cbKeluhan1.Location = new Point(332, 267);
+            cbKeluhan1.Location = new Point(413, 267);
             cbKeluhan1.Margin = new Padding(3, 2, 3, 2);
             cbKeluhan1.Name = "cbKeluhan1";
             cbKeluhan1.ShadowDecoration.CustomizableEdges = customizableEdges2;
@@ -113,7 +113,7 @@
             guna2Button1.FillColor = Color.Black;
             guna2Button1.Font = new Font("Segoe UI", 9F);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(455, 418);
+            guna2Button1.Location = new Point(536, 552);
             guna2Button1.Margin = new Padding(3, 2, 3, 2);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges4;
@@ -150,7 +150,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1093, 41);
+            panel1.Size = new Size(1254, 41);
             panel1.TabIndex = 7;
             panel1.Paint += panel1_Paint;
             // 
@@ -169,7 +169,7 @@
             cbKeluhan2.ForeColor = Color.FromArgb(68, 88, 112);
             cbKeluhan2.ItemHeight = 30;
             cbKeluhan2.Items.AddRange(new object[] { "KELUHAN 2", "PUSING", "MERIANG", "PANAS", "BIBIR PECAH PECAH", "TENGOROKAN SAKIT" });
-            cbKeluhan2.Location = new Point(332, 308);
+            cbKeluhan2.Location = new Point(413, 308);
             cbKeluhan2.Margin = new Padding(3, 2, 3, 2);
             cbKeluhan2.Name = "cbKeluhan2";
             cbKeluhan2.ShadowDecoration.CustomizableEdges = customizableEdges8;
@@ -193,7 +193,7 @@
             cbKeluhan3.ForeColor = Color.FromArgb(68, 88, 112);
             cbKeluhan3.ItemHeight = 30;
             cbKeluhan3.Items.AddRange(new object[] { "KELUHAN 3", "PUSING", "MERIANG", "PANAS", "BIBIR PECAH PECAH", "TENGOROKAN SAKIT" });
-            cbKeluhan3.Location = new Point(332, 348);
+            cbKeluhan3.Location = new Point(413, 348);
             cbKeluhan3.Margin = new Padding(3, 2, 3, 2);
             cbKeluhan3.Name = "cbKeluhan3";
             cbKeluhan3.ShadowDecoration.CustomizableEdges = customizableEdges10;
@@ -207,7 +207,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1093, 595);
+            ClientSize = new Size(1254, 729);
             Controls.Add(cbKeluhan3);
             Controls.Add(cbKeluhan2);
             Controls.Add(guna2Button1);
@@ -218,7 +218,6 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "KonsultasiForm";
             Text = "KonsultasiForm";
-            WindowState = FormWindowState.Maximized;
             Load += KonsultasiForm_Load;
             panel1.ResumeLayout(false);
             ResumeLayout(false);

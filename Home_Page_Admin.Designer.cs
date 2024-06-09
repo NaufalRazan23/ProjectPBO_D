@@ -120,7 +120,6 @@
             Name = "Home_Page_Admin";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Admin";
-            WindowState = FormWindowState.Minimized;
             Load += Form2_Load;
             ResumeLayout(false);
             PerformLayout();

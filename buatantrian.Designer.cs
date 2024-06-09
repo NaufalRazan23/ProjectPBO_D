@@ -71,7 +71,7 @@
             guna2ComboBox1.Font = new Font("Segoe UI", 10F);
             guna2ComboBox1.ForeColor = Color.FromArgb(68, 88, 112);
             guna2ComboBox1.ItemHeight = 30;
-            guna2ComboBox1.Location = new Point(229, 348);
+            guna2ComboBox1.Location = new Point(379, 348);
             guna2ComboBox1.Margin = new Padding(3, 2, 3, 2);
             guna2ComboBox1.Name = "guna2ComboBox1";
             guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
@@ -90,7 +90,7 @@
             guna2Button1.FillColor = Color.Black;
             guna2Button1.Font = new Font("Segoe UI", 9F);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(355, 398);
+            guna2Button1.Location = new Point(505, 398);
             guna2Button1.Margin = new Padding(3, 2, 3, 2);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges4;
@@ -111,7 +111,7 @@
             IniNamaLengkap.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             IniNamaLengkap.Font = new Font("Segoe UI", 9F);
             IniNamaLengkap.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            IniNamaLengkap.Location = new Point(228, 314);
+            IniNamaLengkap.Location = new Point(378, 314);
             IniNamaLengkap.Margin = new Padding(4);
             IniNamaLengkap.Name = "IniNamaLengkap";
             IniNamaLengkap.PasswordChar = '\0';
@@ -131,7 +131,7 @@
             panel9.Controls.Add(panel15);
             panel9.Controls.Add(panel16);
             panel9.Controls.Add(label4);
-            panel9.Location = new Point(544, 86);
+            panel9.Location = new Point(694, 86);
             panel9.Name = "panel9";
             panel9.Size = new Size(44, 10);
             panel9.TabIndex = 96;
@@ -181,7 +181,7 @@
             // 
             panel10.Anchor = AnchorStyles.Top;
             panel10.BackColor = SystemColors.ActiveCaptionText;
-            panel10.Location = new Point(494, 86);
+            panel10.Location = new Point(644, 86);
             panel10.Name = "panel10";
             panel10.Size = new Size(44, 10);
             panel10.TabIndex = 95;
@@ -190,7 +190,7 @@
             // 
             panel11.Anchor = AnchorStyles.Top;
             panel11.BackColor = SystemColors.ActiveCaptionText;
-            panel11.Location = new Point(444, 86);
+            panel11.Location = new Point(594, 86);
             panel11.Name = "panel11";
             panel11.Size = new Size(44, 10);
             panel11.TabIndex = 94;
@@ -199,7 +199,7 @@
             // 
             panel12.Anchor = AnchorStyles.Top;
             panel12.BackColor = SystemColors.ActiveCaptionText;
-            panel12.Location = new Point(394, 86);
+            panel12.Location = new Point(544, 86);
             panel12.Name = "panel12";
             panel12.Size = new Size(44, 10);
             panel12.TabIndex = 93;
@@ -210,7 +210,7 @@
             label3.Anchor = AnchorStyles.Top;
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Location = new Point(404, 20);
+            label3.Location = new Point(554, 20);
             label3.Name = "label3";
             label3.Size = new Size(153, 15);
             label3.TabIndex = 92;
@@ -237,12 +237,12 @@
             lblSaatIni.Anchor = AnchorStyles.Top;
             lblSaatIni.BackColor = Color.Transparent;
             lblSaatIni.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblSaatIni.Location = new Point(394, 34);
+            lblSaatIni.Location = new Point(544, 34);
             lblSaatIni.Margin = new Padding(2, 0, 2, 0);
             lblSaatIni.Name = "lblSaatIni";
             lblSaatIni.Size = new Size(193, 52);
             lblSaatIni.TabIndex = 103;
-            lblSaatIni.Text = "-   -   -   -";
+            lblSaatIni.Text = "- - - -";
             lblSaatIni.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // guna2Button2
@@ -256,7 +256,7 @@
             guna2Button2.FillColor = Color.Black;
             guna2Button2.Font = new Font("Segoe UI", 9F);
             guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(376, 232);
+            guna2Button2.Location = new Point(526, 232);
             guna2Button2.Margin = new Padding(3, 2, 3, 2);
             guna2Button2.Name = "guna2Button2";
             guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges8;
@@ -276,7 +276,7 @@
             ButUmum.FillColor = Color.Black;
             ButUmum.Font = new Font("Segoe UI", 9F);
             ButUmum.ForeColor = Color.White;
-            ButUmum.Location = new Point(376, 142);
+            ButUmum.Location = new Point(526, 142);
             ButUmum.Margin = new Padding(3, 2, 3, 2);
             ButUmum.Name = "ButUmum";
             ButUmum.ShadowDecoration.CustomizableEdges = customizableEdges10;
@@ -289,7 +289,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(955, 440);
+            ClientSize = new Size(1254, 729);
             Controls.Add(guna2Button2);
             Controls.Add(lblSaatIni);
             Controls.Add(label_back);
@@ -305,7 +305,6 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "buatantrian";
             Text = "buatantrian";
-            WindowState = FormWindowState.Maximized;
             Load += buatantrian_Load;
             panel9.ResumeLayout(false);
             panel9.PerformLayout();

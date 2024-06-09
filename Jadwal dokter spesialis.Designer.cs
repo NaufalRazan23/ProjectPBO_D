@@ -49,7 +49,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 39.75F, FontStyle.Bold);
-            label1.Location = new Point(332, 28);
+            label1.Location = new Point(413, 28);
             label1.Name = "label1";
             label1.Size = new Size(465, 71);
             label1.TabIndex = 8;
@@ -64,7 +64,7 @@
             dataGridView1.BackgroundColor = SystemColors.ButtonFace;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { CHari, CMulai, CSelesai, CDokter, CJenis });
-            dataGridView1.Location = new Point(200, 136);
+            dataGridView1.Location = new Point(281, 136);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.Size = new Size(710, 393);
@@ -130,13 +130,12 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1093, 595);
+            ClientSize = new Size(1254, 729);
             Controls.Add(btnBack);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
             Name = "Jadwal_dokter_spesialis";
             Text = "Jadwal_dokter_spesialis";
-            WindowState = FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -50,7 +50,7 @@
             guna2HtmlLabel1.Anchor = AnchorStyles.Top;
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Arial", 24F, FontStyle.Bold);
-            guna2HtmlLabel1.Location = new Point(395, 7);
+            guna2HtmlLabel1.Location = new Point(476, 7);
             guna2HtmlLabel1.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(363, 39);
@@ -59,6 +59,7 @@
             // 
             // btnBack
             // 
+            btnBack.BackColor = Color.Transparent;
             btnBack.CustomizableEdges = customizableEdges1;
             btnBack.DisabledState.BorderColor = Color.DarkGray;
             btnBack.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -66,7 +67,7 @@
             btnBack.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnBack.FillColor = Color.Empty;
             btnBack.Font = new Font("Segoe UI", 9F);
-            btnBack.ForeColor = Color.White;
+            btnBack.ForeColor = Color.Transparent;
             btnBack.Image = Properties.Resources.backbutton;
             btnBack.Location = new Point(10, 9);
             btnBack.Margin = new Padding(3, 2, 3, 2);
@@ -80,7 +81,7 @@
             // 
             btnEdit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnEdit.Font = new Font("Segoe UI", 12F);
-            btnEdit.Location = new Point(1009, 19);
+            btnEdit.Location = new Point(1170, 19);
             btnEdit.Margin = new Padding(2);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(36, 32);
@@ -93,7 +94,7 @@
             // 
             btnHapus.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnHapus.Font = new Font("Segoe UI", 12F);
-            btnHapus.Location = new Point(969, 19);
+            btnHapus.Location = new Point(1130, 19);
             btnHapus.Margin = new Padding(2);
             btnHapus.Name = "btnHapus";
             btnHapus.Size = new Size(36, 32);
@@ -106,7 +107,7 @@
             // 
             btnTambah.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnTambah.Font = new Font("Segoe UI", 12F);
-            btnTambah.Location = new Point(1049, 19);
+            btnTambah.Location = new Point(1210, 19);
             btnTambah.Margin = new Padding(2);
             btnTambah.Name = "btnTambah";
             btnTambah.Size = new Size(36, 32);
@@ -122,7 +123,7 @@
             dataGridView1.BackgroundColor = SystemColors.ButtonFace;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { CHari, CMulai, CSelesai, CDokter, CJenis });
-            dataGridView1.Location = new Point(186, 125);
+            dataGridView1.Location = new Point(267, 192);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.Size = new Size(710, 393);
@@ -168,7 +169,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1093, 595);
+            ClientSize = new Size(1254, 729);
             Controls.Add(dataGridView1);
             Controls.Add(btnTambah);
             Controls.Add(btnHapus);
@@ -179,7 +180,6 @@
             Name = "EditJadwalDokter";
             StartPosition = FormStartPosition.CenterParent;
             Text = "`";
-            WindowState = FormWindowState.Minimized;
             Load += EditJadwalDokter_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
