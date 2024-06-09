@@ -49,7 +49,7 @@
             btnBuatAntrian.FillColor = Color.Black;
             btnBuatAntrian.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold);
             btnBuatAntrian.ForeColor = Color.White;
-            btnBuatAntrian.Location = new Point(450, 375);
+            btnBuatAntrian.Location = new Point(182, 375);
             btnBuatAntrian.Margin = new Padding(2);
             btnBuatAntrian.Name = "btnBuatAntrian";
             btnBuatAntrian.RightToLeft = RightToLeft.Yes;
@@ -67,7 +67,7 @@
             labelHomePage.AutoSize = true;
             labelHomePage.BackColor = Color.Transparent;
             labelHomePage.Font = new Font("Microsoft YaHei", 40F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelHomePage.Location = new Point(413, 42);
+            labelHomePage.Location = new Point(378, 41);
             labelHomePage.Name = "labelHomePage";
             labelHomePage.Size = new Size(542, 81);
             labelHomePage.TabIndex = 0;
@@ -87,7 +87,7 @@
             Btn.FillColor = Color.Black;
             Btn.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Btn.ForeColor = Color.White;
-            Btn.Location = new Point(841, 375);
+            Btn.Location = new Point(750, 375);
             Btn.Margin = new Padding(2);
             Btn.Name = "Btn";
             Btn.ShadowDecoration.CustomizableEdges = customizableEdges4;
@@ -104,7 +104,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1411, 695);
+            ClientSize = new Size(1254, 729);
             Controls.Add(Btn);
             Controls.Add(btnBuatAntrian);
             Controls.Add(labelHomePage);
@@ -113,7 +113,7 @@
             StartPosition = FormStartPosition.CenterParent;
             Text = "HomepageAntrianUser'";
             TopMost = true;
-            WindowState = FormWindowState.Maximized;
+            WindowState = FormWindowState.Minimized;
             Load += Home_Page_User_Load;
             ResumeLayout(false);
             PerformLayout();
