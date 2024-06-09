@@ -109,7 +109,6 @@ namespace ProjectPBO
             label1.Size = new Size(146, 37);
             label1.TabIndex = 1;
             label1.Text = "HospitalQ";
-            label1.Click += label1_Click;
             // 
             // label3
             // 
@@ -121,7 +120,6 @@ namespace ProjectPBO
             label3.Size = new Size(458, 45);
             label3.TabIndex = 1;
             label3.Text = "Selamat Datang Di HospitalQ";
-            label3.Click += label1_Click;
             // 
             // label5
             // 
@@ -132,7 +130,6 @@ namespace ProjectPBO
             label5.Size = new Size(633, 191);
             label5.TabIndex = 1;
             label5.Text = resources.GetString("label5.Text");
-            label5.Click += label1_Click;
             // 
             // label6
             // 
@@ -146,7 +143,6 @@ namespace ProjectPBO
             label6.TabIndex = 1;
             label6.Text = "Alamat Jln Jawa4 Kab Jember";
             label6.TextAlign = ContentAlignment.BottomLeft;
-            label6.Click += label1_Click;
             // 
             // label7
             // 
@@ -160,7 +156,6 @@ namespace ProjectPBO
             label7.Text = "Company Name";
             label7.TextAlign = ContentAlignment.BottomCenter;
             label7.UseWaitCursor = true;
-            label7.Click += label1_Click;
             // 
             // label8
             // 
@@ -173,7 +168,6 @@ namespace ProjectPBO
             label8.TabIndex = 1;
             label8.Text = "085714495603";
             label8.TextAlign = ContentAlignment.BottomRight;
-            label8.Click += label1_Click;
             // 
             // Form1
             // 
