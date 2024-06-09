@@ -22,9 +22,8 @@ namespace ProjectPBO
         List<Label> lblKeterangan;
         Dictionary<string, int> labelKeIndex = new Dictionary<string, int>();
         System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-        private Home_Page_Admin Home_Page_AdminInstance;
 
-        public Tampilan_nomor_antrian(Home_Page_Admin Home_Page_AdminInstance)
+        public Tampilan_nomor_antrian()
         {
             InitializeComponent();
 
@@ -64,7 +63,7 @@ namespace ProjectPBO
                     int index = labelKeIndex[antrianSekarangDiLabelIni.labelAntrian];
                     this.antrianSekarang[index] = antrianSekarangDiLabelIni;
                     var pad = antrianSekarangDiLabelIni.nomorAntrian.ToString("000");
-                    string nomorBaru = $"{antrianSekarangDiLabelIni.labelAntrian}   {pad[0]}   {pad[1]}   {pad[2]}";
+                    string nomorBaru = $"{antrianSekarangDiLabelIni.labelAntrian}      {pad[0]}      {pad[1]}      {pad[2]}";
                     if (lblNomorAntrian[index].Text != nomorBaru && this.Visible)
                     {
                         popupSelesai dialogAntrianSelesai = new popupSelesai(lblNomorAntrian[index].Text, nomorBaru, antrianSekarangDiLabelIni.atasNama);
@@ -77,7 +76,7 @@ namespace ProjectPBO
                 {
                     int index = labelKeIndex[item[0]];
                     this.antrianSekarang[index] = antrianSekarangDiLabelIni;
-                    lblNomorAntrian[index].Text = $"{item[0]}   0   0   0";
+                    lblNomorAntrian[index].Text = $"{item[0]}      -      -      -";
                     lblKeterangan[index].Text = $"Atas Nama: -\nStatus: -";
                 }
             }

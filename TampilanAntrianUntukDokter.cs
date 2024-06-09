@@ -38,13 +38,13 @@ namespace ProjectPBO
             if (antrianSekarangDiLabelIni != null)
             {
                 var pad = antrianSekarangDiLabelIni.nomorAntrian.ToString("000");
-                string nomorBaru = $"{antrianSekarangDiLabelIni.labelAntrian}   {pad[0]}   {pad[1]}   {pad[2]}";
+                string nomorBaru = $"{antrianSekarangDiLabelIni.labelAntrian}     {pad[0]}     {pad[1]}     {pad[2]}";
                 lblNomorAntrian.Text = nomorBaru;
                 lblKeterangan.Text = $"Atas Nama: {antrianSekarangDiLabelIni.atasNama}\nStatus: {antrianSekarangDiLabelIni.statusAntrian}";
             }
             else
             {
-                lblNomorAntrian.Text = $"{listLabel[indexLabelSekarang][0]}   0   0   0";
+                lblNomorAntrian.Text = $"{listLabel[indexLabelSekarang][0]}     -     -     -";
                 lblKeterangan.Text = $"Atas Nama: -\nStatus: -";
             }
         }
