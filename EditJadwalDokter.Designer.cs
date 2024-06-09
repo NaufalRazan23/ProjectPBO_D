@@ -56,7 +56,6 @@
             guna2HtmlLabel1.Size = new Size(363, 39);
             guna2HtmlLabel1.TabIndex = 1;
             guna2HtmlLabel1.Text = "EDIT JADWAL DOKTER";
-            guna2HtmlLabel1.UseWaitCursor = true;
             // 
             // btnBack
             // 
@@ -75,7 +74,6 @@
             btnBack.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnBack.Size = new Size(48, 31);
             btnBack.TabIndex = 7;
-            btnBack.UseWaitCursor = true;
             btnBack.Click += btnBack_Click;
             // 
             // btnEdit
@@ -129,7 +127,6 @@
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.Size = new Size(710, 393);
             dataGridView1.TabIndex = 24;
-            dataGridView1.UseWaitCursor = true;
             // 
             // CHari
             // 
@@ -182,7 +179,6 @@
             Name = "EditJadwalDokter";
             StartPosition = FormStartPosition.CenterParent;
             Text = "`";
-            UseWaitCursor = true;
             WindowState = FormWindowState.Maximized;
             Load += EditJadwalDokter_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

@@ -60,7 +60,6 @@
             label1.TabIndex = 2;
             label1.Text = "REKOMENDASI OBAT YANG DIPERLUKAN";
             label1.TextAlign = ContentAlignment.TopCenter;
-            label1.UseWaitCursor = true;
             // 
             // panel1
             // 
@@ -72,7 +71,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1097, 61);
             panel1.TabIndex = 3;
-            panel1.UseWaitCursor = true;
             // 
             // label2
             // 
@@ -85,7 +83,6 @@
             label2.TabIndex = 0;
             label2.Text = "UNTUK KONSULTASI LEBIH LANJUT SILAHKAN MENGAMBIL ANTRIAN MENUJU DOKTER";
             label2.TextAlign = ContentAlignment.BottomCenter;
-            label2.UseWaitCursor = true;
             label2.Click += label2_Click;
             // 
             // panel2
@@ -102,7 +99,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(440, 163);
             panel2.TabIndex = 4;
-            panel2.UseWaitCursor = true;
             // 
             // label8
             // 
@@ -115,7 +111,6 @@
             label8.Size = new Size(98, 22);
             label8.TabIndex = 4;
             label8.Text = "DEGIROL";
-            label8.UseWaitCursor = true;
             // 
             // label5
             // 
@@ -128,7 +123,6 @@
             label5.Size = new Size(135, 22);
             label5.TabIndex = 2;
             label5.Text = "SP TORCHES";
-            label5.UseWaitCursor = true;
             // 
             // label4
             // 
@@ -141,7 +135,6 @@
             label4.Size = new Size(81, 29);
             label4.TabIndex = 1;
             label4.Text = "ANAK";
-            label4.UseWaitCursor = true;
             label4.Click += label4_Click;
             // 
             // label3
@@ -155,7 +148,6 @@
             label3.Size = new Size(118, 29);
             label3.TabIndex = 0;
             label3.Text = "DEWASA";
-            label3.UseWaitCursor = true;
             // 
             // btnBack
             // 
@@ -175,7 +167,6 @@
             btnBack.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnBack.Size = new Size(47, 31);
             btnBack.TabIndex = 5;
-            btnBack.UseWaitCursor = true;
             btnBack.Click += btnBack_Click;
             // 
             // lbSymptom
@@ -191,7 +182,6 @@
             lbSymptom.TabIndex = 7;
             lbSymptom.Text = "Lorem Ipsum Dorem Idenopo ";
             lbSymptom.TextAlign = ContentAlignment.MiddleCenter;
-            lbSymptom.UseWaitCursor = true;
             // 
             // lbPercentage
             // 
@@ -207,7 +197,6 @@
             lbPercentage.TabIndex = 6;
             lbPercentage.Text = "100%";
             lbPercentage.TextAlign = ContentAlignment.MiddleCenter;
-            lbPercentage.UseWaitCursor = true;
             // 
             // label6
             // 
@@ -222,7 +211,6 @@
             label6.TabIndex = 9;
             label6.Text = "Lorem Ipsum Dorem Idenopo ";
             label6.TextAlign = ContentAlignment.MiddleCenter;
-            label6.UseWaitCursor = true;
             // 
             // label7
             // 
@@ -238,7 +226,6 @@
             label7.TabIndex = 8;
             label7.Text = "100%";
             label7.TextAlign = ContentAlignment.MiddleCenter;
-            label7.UseWaitCursor = true;
             // 
             // RekomendasiObatForm
             // 
@@ -258,7 +245,6 @@
             Name = "RekomendasiObatForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "RekomendasiObatForm";
-            UseWaitCursor = true;
             WindowState = FormWindowState.Maximized;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
