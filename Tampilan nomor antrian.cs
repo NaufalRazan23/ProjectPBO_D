@@ -202,5 +202,13 @@ namespace ProjectPBO
         {
 
         }
+
+        private void lblnxtAntrian_Click(object sender, EventArgs e)
+        {
+            TampilanAntrianUntukDokter tampildkt = new TampilanAntrianUntukDokter();
+            tampildkt.FormClosed += (s, args) => this.Show();
+            tampildkt.Show();
+            this.Hide();
+        }
     }
 }

@@ -28,87 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            label2 = new Label();
-            label9 = new Label();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel2 = new Panel();
+            lblKeterangan = new Label();
             panel3 = new Panel();
-            label14 = new Label();
+            lblJenisDokter = new Label();
             panel4 = new Panel();
             panel5 = new Panel();
             panel6 = new Panel();
             panel7 = new Panel();
             label19 = new Label();
-            label1 = new Label();
-            panel1.SuspendLayout();
+            lblNomorAntrian = new Label();
+            BtnNxtDoc = new Label();
+            BtnPrevdkt = new Label();
+            btnTandaiSelesai = new Guna.UI2.WinForms.Guna2Button();
+            panel2.SuspendLayout();
             panel3.SuspendLayout();
             SuspendLayout();
             // 
-            // panel1
-            // 
-            panel1.BackColor = SystemColors.ControlText;
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label9);
-            panel1.Location = new Point(286, 305);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(302, 75);
-            panel1.TabIndex = 179;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold);
-            label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(71, 41);
-            label2.Name = "label2";
-            label2.Size = new Size(148, 25);
-            label2.TabIndex = 13;
-            label2.Text = "NEXT ANTRIAN";
-            label2.Click += label2_Click;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold);
-            label9.ForeColor = SystemColors.ButtonHighlight;
-            label9.Location = new Point(36, 11);
-            label9.Name = "label9";
-            label9.Size = new Size(210, 25);
-            label9.TabIndex = 0;
-            label9.Text = "PASIEN TELAH SELESAI";
-            label9.Click += label9_Click;
-            // 
             // panel2
             // 
+            panel2.Anchor = AnchorStyles.None;
             panel2.BackColor = SystemColors.ButtonHighlight;
+            panel2.Controls.Add(lblKeterangan);
             panel2.Location = new Point(286, 198);
             panel2.Name = "panel2";
             panel2.Size = new Size(302, 101);
             panel2.TabIndex = 178;
             // 
+            // lblKeterangan
+            // 
+            lblKeterangan.AutoSize = true;
+            lblKeterangan.Font = new Font("Segoe UI Semibold", 20F, FontStyle.Bold);
+            lblKeterangan.Location = new Point(7, 15);
+            lblKeterangan.Name = "lblKeterangan";
+            lblKeterangan.Size = new Size(271, 74);
+            lblKeterangan.TabIndex = 0;
+            lblKeterangan.Text = "Atas Nama: User\nStatus: Belum selesai";
+            // 
             // panel3
             // 
+            panel3.Anchor = AnchorStyles.None;
             panel3.BackColor = SystemColors.ControlText;
-            panel3.Controls.Add(label14);
+            panel3.Controls.Add(lblJenisDokter);
             panel3.Location = new Point(321, 135);
             panel3.Name = "panel3";
             panel3.Size = new Size(228, 40);
             panel3.TabIndex = 177;
             // 
-            // label14
+            // lblJenisDokter
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
-            label14.ForeColor = SystemColors.ButtonHighlight;
-            label14.Location = new Point(15, 6);
-            label14.Name = "label14";
-            label14.Size = new Size(172, 30);
-            label14.TabIndex = 0;
-            label14.Text = "DOKTER UMUM";
-            label14.Click += label14_Click;
+            lblJenisDokter.BackColor = Color.Transparent;
+            lblJenisDokter.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
+            lblJenisDokter.ForeColor = SystemColors.ButtonHighlight;
+            lblJenisDokter.Location = new Point(27, 6);
+            lblJenisDokter.Name = "lblJenisDokter";
+            lblJenisDokter.Size = new Size(172, 30);
+            lblJenisDokter.TabIndex = 0;
+            lblJenisDokter.Text = "DOKTER UMUM";
             // 
             // panel4
             // 
+            panel4.Anchor = AnchorStyles.None;
             panel4.BackColor = SystemColors.ActiveCaptionText;
             panel4.Location = new Point(535, 111);
             panel4.Name = "panel4";
@@ -117,6 +99,7 @@
             // 
             // panel5
             // 
+            panel5.Anchor = AnchorStyles.None;
             panel5.BackColor = SystemColors.ActiveCaptionText;
             panel5.Location = new Point(454, 111);
             panel5.Name = "panel5";
@@ -125,6 +108,7 @@
             // 
             // panel6
             // 
+            panel6.Anchor = AnchorStyles.None;
             panel6.BackColor = SystemColors.ActiveCaptionText;
             panel6.Location = new Point(369, 111);
             panel6.Name = "panel6";
@@ -133,6 +117,7 @@
             // 
             // panel7
             // 
+            panel7.Anchor = AnchorStyles.None;
             panel7.BackColor = SystemColors.ActiveCaptionText;
             panel7.Location = new Point(286, 111);
             panel7.Name = "panel7";
@@ -141,6 +126,7 @@
             // 
             // label19
             // 
+            label19.Anchor = AnchorStyles.None;
             label19.AutoSize = true;
             label19.Font = new Font("Segoe UI Semibold", 20F, FontStyle.Bold);
             label19.Location = new Point(248, 5);
@@ -148,27 +134,76 @@
             label19.Size = new Size(360, 37);
             label19.TabIndex = 172;
             label19.Text = "NOMOR ANTRIAN SAAT INI";
-            label19.Click += label19_Click;
             // 
-            // label1
+            // lblNomorAntrian
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 30F, FontStyle.Bold);
-            label1.Location = new Point(293, 50);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(285, 54);
-            label1.TabIndex = 180;
-            label1.Text = "A     0     0     1";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
+            lblNomorAntrian.Anchor = AnchorStyles.None;
+            lblNomorAntrian.AutoSize = true;
+            lblNomorAntrian.Font = new Font("Segoe UI", 30F, FontStyle.Bold);
+            lblNomorAntrian.Location = new Point(293, 50);
+            lblNomorAntrian.Margin = new Padding(2, 0, 2, 0);
+            lblNomorAntrian.Name = "lblNomorAntrian";
+            lblNomorAntrian.Size = new Size(285, 54);
+            lblNomorAntrian.TabIndex = 180;
+            lblNomorAntrian.Text = "A     0     0     1";
+            lblNomorAntrian.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // BtnNxtDoc
+            // 
+            BtnNxtDoc.AccessibleName = "labelquitnj";
+            BtnNxtDoc.Anchor = AnchorStyles.Right;
+            BtnNxtDoc.AutoSize = true;
+            BtnNxtDoc.Font = new Font("Segoe UI", 40F);
+            BtnNxtDoc.Location = new Point(802, 141);
+            BtnNxtDoc.Name = "BtnNxtDoc";
+            BtnNxtDoc.RightToLeft = RightToLeft.Yes;
+            BtnNxtDoc.Size = new Size(67, 72);
+            BtnNxtDoc.TabIndex = 192;
+            BtnNxtDoc.Text = "<";
+            BtnNxtDoc.Click += lblNxtDoc_Click;
+            // 
+            // BtnPrevdkt
+            // 
+            BtnPrevdkt.AccessibleName = "labelquitnj";
+            BtnPrevdkt.Anchor = AnchorStyles.Left;
+            BtnPrevdkt.AutoSize = true;
+            BtnPrevdkt.Font = new Font("Segoe UI", 40F);
+            BtnPrevdkt.Location = new Point(12, 141);
+            BtnPrevdkt.Name = "BtnPrevdkt";
+            BtnPrevdkt.RightToLeft = RightToLeft.Yes;
+            BtnPrevdkt.Size = new Size(67, 72);
+            BtnPrevdkt.TabIndex = 193;
+            BtnPrevdkt.Text = ">";
+            BtnPrevdkt.Click += BtnPrevdkt_Click;
+            // 
+            // btnTandaiSelesai
+            // 
+            btnTandaiSelesai.Anchor = AnchorStyles.None;
+            btnTandaiSelesai.CustomizableEdges = customizableEdges1;
+            btnTandaiSelesai.DisabledState.BorderColor = Color.DarkGray;
+            btnTandaiSelesai.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnTandaiSelesai.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnTandaiSelesai.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnTandaiSelesai.FillColor = Color.Black;
+            btnTandaiSelesai.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
+            btnTandaiSelesai.ForeColor = Color.White;
+            btnTandaiSelesai.Location = new Point(283, 304);
+            btnTandaiSelesai.Name = "btnTandaiSelesai";
+            btnTandaiSelesai.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnTandaiSelesai.Size = new Size(307, 81);
+            btnTandaiSelesai.TabIndex = 194;
+            btnTandaiSelesai.Text = "CheckUp Selesai";
+            btnTandaiSelesai.Click += btnTandaiSelesai_Click;
             // 
             // TampilanAntrianUntukDokter
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(881, 398);
-            Controls.Add(label1);
-            Controls.Add(panel1);
+            Controls.Add(btnTandaiSelesai);
+            Controls.Add(BtnPrevdkt);
+            Controls.Add(BtnNxtDoc);
+            Controls.Add(lblNomorAntrian);
             Controls.Add(panel2);
             Controls.Add(panel3);
             Controls.Add(panel4);
@@ -176,31 +211,30 @@
             Controls.Add(panel6);
             Controls.Add(panel7);
             Controls.Add(label19);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "TampilanAntrianUntukDokter";
             Text = "TampilanAntrianUntukDokter";
             WindowState = FormWindowState.Maximized;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             panel3.ResumeLayout(false);
-            panel3.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Panel panel1;
-        private Label label2;
-        private Label label9;
         private Panel panel2;
         private Panel panel3;
-        private Label label14;
+        private Label lblJenisDokter;
         private Panel panel4;
         private Panel panel5;
         private Panel panel6;
         private Panel panel7;
         private Label label19;
-        private Label label1;
+        private Label lblNomorAntrian;
+        private Label BtnNxtDoc;
+        private Label BtnPrevdkt;
+        private Label lblKeterangan;
+        private Guna.UI2.WinForms.Guna2Button btnTandaiSelesai;
     }
 }

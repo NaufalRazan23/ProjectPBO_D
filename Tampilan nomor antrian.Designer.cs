@@ -111,6 +111,7 @@
             panel32 = new Panel();
             lblKeterangan6 = new Label();
             panel34 = new Panel();
+
             lblKeterangan9 = new Label();
             lblNomorAntrian2 = new Label();
             lblNomorAntrian3 = new Label();
@@ -1255,11 +1256,15 @@
             btnNext.UseVisualStyleBackColor = false;
             btnNext.Click += btnNext_Click;
             // 
+            // lblNxtDoc
+            // 
+            // 
             // Tampilan_nomor_antrian
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1093, 595);
+
             Controls.Add(btnNext);
             Controls.Add(btnTandaiMasuk9);
             Controls.Add(btnTandaiMasuk8);
@@ -1279,6 +1284,7 @@
             Controls.Add(lblNomorAntrian4);
             Controls.Add(lblNomorAntrian3);
             Controls.Add(lblNomorAntrian2);
+
             Controls.Add(panel34);
             Controls.Add(panel11);
             Controls.Add(panel13);
