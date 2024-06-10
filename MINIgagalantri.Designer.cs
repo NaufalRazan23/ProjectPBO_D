@@ -38,9 +38,10 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(121, 134);
+            label4.Location = new Point(173, 223);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(321, 63);
+            label4.Size = new Size(485, 96);
             label4.TabIndex = 51;
             label4.Text = "ANTRIAN ANDA GAGAL DI BUAT, TIDAK ADA\r\nDOKTER YANG SEDANG BEKERJA, MOHON\r\nPERIKSA BAGIAN JADWAL\r\n";
             label4.TextAlign = ContentAlignment.TopCenter;
@@ -48,21 +49,24 @@
             // 
             // button2
             // 
-            button2.Location = new Point(246, 245);
+            button2.Location = new Point(351, 408);
+            button2.Margin = new Padding(4, 5, 4, 5);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(107, 38);
             button2.TabIndex = 50;
             button2.Text = "OK";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // MINIgagalantri
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(558, 374);
+            ClientSize = new Size(797, 623);
             Controls.Add(label4);
             Controls.Add(button2);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "MINIgagalantri";
             Text = "gagalantri";
             ResumeLayout(false);

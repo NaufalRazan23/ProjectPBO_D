@@ -15,7 +15,7 @@ namespace ProjectPBO
         public popupSelesai(string sebelumnya, string nomor, string nama)
         {
             InitializeComponent();
-            label2.Text = $"PASIEN {sebelumnya} TELAH SELESAI";
+            label1.Text = $"PASIEN {sebelumnya} TELAH SELESAI";
             label6.Text = nomor;
             label8.Text = nama;
         }

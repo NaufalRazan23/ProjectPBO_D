@@ -109,5 +109,10 @@ namespace ProjectPBO
         {
 
         }
+
+        private void ButUmum_Click(object sender, EventArgs e)
+        {
+            guna2ComboBox1.DroppedDown = true;
+        }
     }
 }

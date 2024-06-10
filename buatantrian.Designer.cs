@@ -71,11 +71,11 @@
             guna2ComboBox1.Font = new Font("Segoe UI", 10F);
             guna2ComboBox1.ForeColor = Color.FromArgb(68, 88, 112);
             guna2ComboBox1.ItemHeight = 30;
-            guna2ComboBox1.Location = new Point(379, 348);
-            guna2ComboBox1.Margin = new Padding(3, 2, 3, 2);
+            guna2ComboBox1.Location = new Point(541, 580);
+            guna2ComboBox1.Margin = new Padding(4, 3, 4, 3);
             guna2ComboBox1.Name = "guna2ComboBox1";
             guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2ComboBox1.Size = new Size(504, 36);
+            guna2ComboBox1.Size = new Size(718, 36);
             guna2ComboBox1.TabIndex = 4;
             guna2ComboBox1.SelectedIndexChanged += guna2ComboBox1_SelectedIndexChanged;
             // 
@@ -90,11 +90,11 @@
             guna2Button1.FillColor = Color.Black;
             guna2Button1.Font = new Font("Segoe UI", 9F);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(505, 398);
-            guna2Button1.Margin = new Padding(3, 2, 3, 2);
+            guna2Button1.Location = new Point(721, 663);
+            guna2Button1.Margin = new Padding(4, 3, 4, 3);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2Button1.Size = new Size(277, 32);
+            guna2Button1.Size = new Size(396, 53);
             guna2Button1.TabIndex = 8;
             guna2Button1.Text = "BUAT ANTRIAN";
             guna2Button1.Click += guna2Button1_Click;
@@ -111,14 +111,14 @@
             IniNamaLengkap.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             IniNamaLengkap.Font = new Font("Segoe UI", 9F);
             IniNamaLengkap.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            IniNamaLengkap.Location = new Point(378, 314);
-            IniNamaLengkap.Margin = new Padding(4);
+            IniNamaLengkap.Location = new Point(540, 523);
+            IniNamaLengkap.Margin = new Padding(6, 7, 6, 7);
             IniNamaLengkap.Name = "IniNamaLengkap";
             IniNamaLengkap.PasswordChar = '\0';
             IniNamaLengkap.PlaceholderText = "MASUKKAN NAMA LENGKAP ANDA";
             IniNamaLengkap.SelectedText = "";
             IniNamaLengkap.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            IniNamaLengkap.Size = new Size(503, 27);
+            IniNamaLengkap.Size = new Size(719, 45);
             IniNamaLengkap.TabIndex = 83;
             IniNamaLengkap.TextChanged += IniNamaLengkap_TextChanged;
             // 
@@ -131,49 +131,55 @@
             panel9.Controls.Add(panel15);
             panel9.Controls.Add(panel16);
             panel9.Controls.Add(label4);
-            panel9.Location = new Point(694, 86);
+            panel9.Location = new Point(991, 143);
+            panel9.Margin = new Padding(4, 5, 4, 5);
             panel9.Name = "panel9";
-            panel9.Size = new Size(44, 10);
+            panel9.Size = new Size(63, 17);
             panel9.TabIndex = 96;
             // 
             // panel13
             // 
             panel13.BackColor = SystemColors.ActiveCaptionText;
-            panel13.Location = new Point(75, 33);
+            panel13.Location = new Point(107, 55);
+            panel13.Margin = new Padding(4, 5, 4, 5);
             panel13.Name = "panel13";
-            panel13.Size = new Size(44, 10);
+            panel13.Size = new Size(63, 17);
             panel13.TabIndex = 101;
             // 
             // panel14
             // 
             panel14.BackColor = SystemColors.ActiveCaptionText;
-            panel14.Location = new Point(25, 33);
+            panel14.Location = new Point(36, 55);
+            panel14.Margin = new Padding(4, 5, 4, 5);
             panel14.Name = "panel14";
-            panel14.Size = new Size(44, 10);
+            panel14.Size = new Size(63, 17);
             panel14.TabIndex = 100;
             // 
             // panel15
             // 
             panel15.BackColor = SystemColors.ActiveCaptionText;
-            panel15.Location = new Point(-25, 33);
+            panel15.Location = new Point(-36, 55);
+            panel15.Margin = new Padding(4, 5, 4, 5);
             panel15.Name = "panel15";
-            panel15.Size = new Size(44, 10);
+            panel15.Size = new Size(63, 17);
             panel15.TabIndex = 99;
             // 
             // panel16
             // 
             panel16.BackColor = SystemColors.ActiveCaptionText;
-            panel16.Location = new Point(-75, 33);
+            panel16.Location = new Point(-107, 55);
+            panel16.Margin = new Padding(4, 5, 4, 5);
             panel16.Name = "panel16";
-            panel16.Size = new Size(44, 10);
+            panel16.Size = new Size(63, 17);
             panel16.TabIndex = 98;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(-57, -33);
+            label4.Location = new Point(-81, -55);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(153, 15);
+            label4.Size = new Size(235, 25);
             label4.TabIndex = 97;
             label4.Text = "NOMOR ANTRIAN SAAT INI";
             // 
@@ -181,27 +187,30 @@
             // 
             panel10.Anchor = AnchorStyles.Top;
             panel10.BackColor = SystemColors.ActiveCaptionText;
-            panel10.Location = new Point(644, 86);
+            panel10.Location = new Point(920, 143);
+            panel10.Margin = new Padding(4, 5, 4, 5);
             panel10.Name = "panel10";
-            panel10.Size = new Size(44, 10);
+            panel10.Size = new Size(63, 17);
             panel10.TabIndex = 95;
             // 
             // panel11
             // 
             panel11.Anchor = AnchorStyles.Top;
             panel11.BackColor = SystemColors.ActiveCaptionText;
-            panel11.Location = new Point(594, 86);
+            panel11.Location = new Point(849, 143);
+            panel11.Margin = new Padding(4, 5, 4, 5);
             panel11.Name = "panel11";
-            panel11.Size = new Size(44, 10);
+            panel11.Size = new Size(63, 17);
             panel11.TabIndex = 94;
             // 
             // panel12
             // 
             panel12.Anchor = AnchorStyles.Top;
             panel12.BackColor = SystemColors.ActiveCaptionText;
-            panel12.Location = new Point(544, 86);
+            panel12.Location = new Point(777, 143);
+            panel12.Margin = new Padding(4, 5, 4, 5);
             panel12.Name = "panel12";
-            panel12.Size = new Size(44, 10);
+            panel12.Size = new Size(63, 17);
             panel12.TabIndex = 93;
             // 
             // label3
@@ -210,9 +219,10 @@
             label3.Anchor = AnchorStyles.Top;
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Location = new Point(554, 20);
+            label3.Location = new Point(791, 33);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(153, 15);
+            label3.Size = new Size(235, 25);
             label3.TabIndex = 92;
             label3.Text = "NOMOR ANTRIAN SAAT INI";
             label3.TextAlign = ContentAlignment.TopCenter;
@@ -224,9 +234,10 @@
             label_back.AutoSize = true;
             label_back.BackColor = Color.Transparent;
             label_back.Font = new Font("Microsoft YaHei", 40F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_back.Location = new Point(-3, 9);
+            label_back.Location = new Point(-4, 15);
+            label_back.Margin = new Padding(4, 0, 4, 0);
             label_back.Name = "label_back";
-            label_back.Size = new Size(71, 72);
+            label_back.Size = new Size(106, 106);
             label_back.TabIndex = 102;
             label_back.Text = "<";
             label_back.Click += label_back_Click;
@@ -237,10 +248,9 @@
             lblSaatIni.Anchor = AnchorStyles.Top;
             lblSaatIni.BackColor = Color.Transparent;
             lblSaatIni.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblSaatIni.Location = new Point(544, 34);
-            lblSaatIni.Margin = new Padding(2, 0, 2, 0);
+            lblSaatIni.Location = new Point(777, 57);
             lblSaatIni.Name = "lblSaatIni";
-            lblSaatIni.Size = new Size(193, 52);
+            lblSaatIni.Size = new Size(276, 87);
             lblSaatIni.TabIndex = 103;
             lblSaatIni.Text = "- - - -";
             lblSaatIni.TextAlign = ContentAlignment.MiddleCenter;
@@ -256,11 +266,11 @@
             guna2Button2.FillColor = Color.Black;
             guna2Button2.Font = new Font("Segoe UI", 9F);
             guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(526, 232);
-            guna2Button2.Margin = new Padding(3, 2, 3, 2);
+            guna2Button2.Location = new Point(751, 387);
+            guna2Button2.Margin = new Padding(4, 3, 4, 3);
             guna2Button2.Name = "guna2Button2";
             guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2Button2.Size = new Size(228, 46);
+            guna2Button2.Size = new Size(326, 77);
             guna2Button2.TabIndex = 104;
             guna2Button2.Text = "LIHAT JADWAL";
             guna2Button2.Click += guna2Button2_Click_1;
@@ -276,20 +286,21 @@
             ButUmum.FillColor = Color.Black;
             ButUmum.Font = new Font("Segoe UI", 9F);
             ButUmum.ForeColor = Color.White;
-            ButUmum.Location = new Point(526, 142);
-            ButUmum.Margin = new Padding(3, 2, 3, 2);
+            ButUmum.Location = new Point(751, 237);
+            ButUmum.Margin = new Padding(4, 3, 4, 3);
             ButUmum.Name = "ButUmum";
             ButUmum.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            ButUmum.Size = new Size(228, 46);
+            ButUmum.Size = new Size(326, 77);
             ButUmum.TabIndex = 85;
             ButUmum.Text = "DOKTER SPESIALIS";
+            ButUmum.Click += ButUmum_Click;
             // 
             // buatantrian
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1254, 729);
+            ClientSize = new Size(1791, 1170);
             Controls.Add(guna2Button2);
             Controls.Add(lblSaatIni);
             Controls.Add(label_back);
@@ -302,7 +313,7 @@
             Controls.Add(IniNamaLengkap);
             Controls.Add(guna2Button1);
             Controls.Add(guna2ComboBox1);
-            Margin = new Padding(3, 2, 3, 2);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "buatantrian";
             Text = "buatantrian";
             Load += buatantrian_Load;

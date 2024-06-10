@@ -797,7 +797,6 @@
             lblJenisDokter1.Name = "lblJenisDokter1";
             lblJenisDokter1.Size = new Size(277, 54);
             lblJenisDokter1.TabIndex = 0;
-            lblJenisDokter1.Text = "DOKTER UMUM";
             lblJenisDokter1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel30

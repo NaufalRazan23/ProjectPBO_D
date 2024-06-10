@@ -66,7 +66,7 @@ namespace ProjectPBO
                     string nomorBaru = $"{antrianSekarangDiLabelIni.labelAntrian}      {pad[0]}      {pad[1]}      {pad[2]}";
                     if (lblNomorAntrian[index].Text != nomorBaru && this.Visible)
                     {
-                        popupSelesai dialogAntrianSelesai = new popupSelesai(lblNomorAntrian[index].Text, nomorBaru, antrianSekarangDiLabelIni.atasNama);
+                        popupSelesai dialogAntrianSelesai = new popupSelesai(lblNomorAntrian[index].Text.Replace(" ", ""), nomorBaru.Replace(" ", ""), antrianSekarangDiLabelIni.atasNama);
                         dialogAntrianSelesai.Show();
                     }
                     lblNomorAntrian[index].Text = nomorBaru;
@@ -195,6 +195,7 @@ namespace ProjectPBO
             TampilanAntrianUntukDokter adminAntrianOne = new TampilanAntrianUntukDokter();
             adminAntrianOne.FormClosed += (s, args) => this.Show();
             adminAntrianOne.Show();
+            this.Hide();
         }
 
         private void panel47_Paint(object sender, PaintEventArgs e)

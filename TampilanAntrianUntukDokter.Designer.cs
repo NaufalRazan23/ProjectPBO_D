@@ -150,14 +150,13 @@
             // lblNomorAntrian
             // 
             lblNomorAntrian.Anchor = AnchorStyles.None;
-            lblNomorAntrian.AutoSize = true;
             lblNomorAntrian.BackColor = Color.Transparent;
             lblNomorAntrian.Font = new Font("Segoe UI", 30F, FontStyle.Bold);
-            lblNomorAntrian.Location = new Point(676, 373);
+            lblNomorAntrian.Location = new Point(661, 373);
             lblNomorAntrian.Name = "lblNomorAntrian";
-            lblNomorAntrian.Size = new Size(437, 81);
+            lblNomorAntrian.Size = new Size(455, 81);
             lblNomorAntrian.TabIndex = 180;
-            lblNomorAntrian.Text = "A     0     0     1";
+            lblNomorAntrian.Text = "A     0     0     0";
             lblNomorAntrian.TextAlign = ContentAlignment.MiddleCenter;
             lblNomorAntrian.Click += lblNomorAntrian_Click;
             // 
@@ -168,7 +167,7 @@
             BtnNxtDoc.AutoSize = true;
             BtnNxtDoc.BackColor = Color.Transparent;
             BtnNxtDoc.Font = new Font("Segoe UI", 40F);
-            BtnNxtDoc.Location = new Point(1679, 510);
+            BtnNxtDoc.Location = new Point(1491, 510);
             BtnNxtDoc.Margin = new Padding(4, 0, 4, 0);
             BtnNxtDoc.Name = "BtnNxtDoc";
             BtnNxtDoc.RightToLeft = RightToLeft.Yes;
@@ -218,7 +217,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1791, 1170);
+            ClientSize = new Size(1603, 975);
             Controls.Add(btnTandaiSelesai);
             Controls.Add(BtnPrevdkt);
             Controls.Add(BtnNxtDoc);
